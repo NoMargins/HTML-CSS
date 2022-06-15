@@ -1,18 +1,14 @@
-[href][target='_blank'] {
+[target='_blank'] {
   color: green;
 }
 ul,
 ol {
   background-color: yellow;
 }
-header,
-footer {
+.bordered-title {
   border: 3px dashed blue;
 }
-h1,
-h2,
-h3,
-h4 {
+.title-highlighted {
   margin-left: 20 px;
 }
 article.new {
