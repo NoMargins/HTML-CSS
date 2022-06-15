@@ -1,8 +1,7 @@
 [target='_blank'] {
   color: green;
 }
-ul,
-ol {
+.list-highligted {
   background-color: yellow;
 }
 .bordered-title {
