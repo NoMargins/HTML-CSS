@@ -1,4 +1,4 @@
-[data-description='anchors'] {
+[data-description="anchors"] {
   background-color: grey;
 }
 [data-description] {
@@ -7,6 +7,6 @@
 [href][target] {
   color: green;
 }
-[type='text'] {
+[type="text"] {
   background-color: orange;
 }
