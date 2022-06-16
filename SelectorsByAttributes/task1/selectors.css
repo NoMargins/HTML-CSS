@@ -10,10 +10,10 @@ a[href^="broken"] {
 a[href$=".com"] {
     margin-left: 50px;
 }
-a[lang|="en"] {
+a[lang*="en"] {
     font-size: 10px;
 }
-a[href^="www"] {
+a[href|="www"] {
     color: green;
 }
 a[title~="popular"] {
