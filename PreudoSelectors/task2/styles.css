@@ -12,6 +12,6 @@ li:last-child > span {
 li:nth-child(even) > span {
     margin-left: 16px;
 }
-div.paragraphs:nth-child(odd) {
+.paragraphs > *:nth-child(odd) {
     background-color: grey;
 }
