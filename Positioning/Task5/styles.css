@@ -59,11 +59,16 @@ main {
     background-color: grey;
     box-sizing: border-box;
     margin-top: 80px;
-    margin-left: 40px;
-    float: left;
     position: relative;
 }
 
 .eye_right {
-    margin-left: 50px;
+    margin-right: 40px;
+    float: right;
+}
+
+.eye_left {
+   margin-left: 40px;
+   float: left;
+
 }
