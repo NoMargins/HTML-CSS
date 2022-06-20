@@ -21,7 +21,7 @@ ul {
     color: white;
     line-height: 50%;
     height: 40px;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 main {
     display: block;
