@@ -7,21 +7,19 @@ header {
     width: 100%;  
 }
 
-nav {
-    height: 40px;
-    box-sizing: border-box;
-}
 
 ul {
     list-style-type: none;
 
 }
+
 .nav-item {
     float: left;
     margin-left: 16px;
     color: white;
     line-height: 50%;
-
+    height: 40px;
+    box-sizing: border-box;
 
 }
 main {
