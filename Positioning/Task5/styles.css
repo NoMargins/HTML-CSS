@@ -1,77 +1,78 @@
 header {
-    background-color: darkturquoise;
-    height: 40px;
-    position: fixed;  
-    z-index: 100;  
-    top: 0;
-    width: 100%;  
-    box-sizing: border-box;
-
+  background-color: darkturquoise;
+  height: 40px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
 
+.nav-list {
+  margin: 0;
+  line-height: 40px;
+  list-style: none;
 }
 
 .nav-item {
-    float: left;
-    margin-left: 16px;
-    color: white;
-    line-height: 50%;
-    height: 40px;
-    box-sizing: content-box;
+  float: left;
+  margin-left: 16px;
+  color: white;
+  line-height: 50%;
 }
 main {
-    display: block;
-    background-color: beige;
-    height: 5000px;
-    position: relative;
+  display: block;
+  background-color: beige;
+  height: 5000px;
+  position: relative;
 }
 .head {
-    height: 200px;
-    width: 200px;
-    background-color: aquamarine;
-    position: absolute;        
-        top: 5%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%); 
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .ear {
-    height: 60px;
-    width: 40px;
-    background-color: brown;
-    float: left;
-    margin-top: -60px;
-    position: relative;
+  height: 60px;
+  width: 40px;
+  background-color: brown;
+  float: left;
+  margin-top: -60px;
+  position: relative;
 }
 .ear_left {
-    margin-left: 200px;
-    box-sizing: border-box;
+  margin-left: 200px;
+  box-sizing: border-box;
 }
 .ear_right {
-    margin-left: -40px;
-    box-sizing: border-box;
-    }
+  margin-left: -40px;
+  box-sizing: border-box;
+}
 .eye {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: grey;
-    box-sizing: border-box;
-    margin-top: 80px;
-    position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: grey;
+  box-sizing: border-box;
+  margin-top: 80px;
+  position: relative;
 }
 
 .eye_right {
-    margin-right: 40px;
-    float: right;
+  margin-right: 40px;
+  float: right;
 }
 
 .eye_left {
-   margin-left: 40px;
-   float: left;
+  margin-left: 40px;
+  float: left;
 }
