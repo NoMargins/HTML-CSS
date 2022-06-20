@@ -15,15 +15,13 @@ ul {
     float: left;
     margin-left: 16px;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    line-height: 50%;
     
 }
 main {
     display: block;
     background-color: beige;
-    height: 5000px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
