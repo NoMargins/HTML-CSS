@@ -1,4 +1,4 @@
-header {
+header, .navigation {
     background-color: darkturquoise;
     height: 40px;
     position: fixed;  
