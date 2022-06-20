@@ -1,4 +1,4 @@
-header, .navigation {
+header,  {
     background-color: darkturquoise;
     height: 40px;
     position: fixed;  
@@ -8,7 +8,10 @@ header, .navigation {
     box-sizing: border-box;
 
 }
-   
+.navigation {
+    height: 40px;
+}   
+
 ul {
     list-style-type: none;
 
