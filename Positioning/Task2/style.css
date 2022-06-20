@@ -32,6 +32,7 @@ footer {
 }
 
 .footer {
+    position: relative;
     clear: both;
 } 
 
