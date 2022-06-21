@@ -44,7 +44,6 @@
   flex-direction: column;
   background-color: grey;
   width: 200px;
-  flex-grow: 1;
 }
 .news_item {
   margin-left: 16px;
