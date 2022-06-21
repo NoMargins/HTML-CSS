@@ -12,5 +12,5 @@
   flex-grow: 1;
   overflow: scroll;
   cursor: all-scroll;
-  min-width: 300px;
+  min-width: 100%;
 }
