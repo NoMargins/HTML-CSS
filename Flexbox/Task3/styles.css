@@ -3,10 +3,14 @@
   background-color: yellow;
   display: flex;
   align-items: center;
+  margin: 0;
+  box-sizing: border-box;
 }
 .menu {
   display: flex;
   list-style-type: none;
+  margin: 0;
+  box-sizing: border-box;
 }
 .list_item {
   margin-right: 16px;
@@ -44,6 +48,14 @@
   background-color: grey;
   width: 200px;
 }
+.news_list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+}
+
 .news_item {
   margin-left: 16px;
   line-height: 40px;
@@ -51,4 +63,5 @@
 
 .title_news {
   text-align: center;
+  margin: 16px;
 }
