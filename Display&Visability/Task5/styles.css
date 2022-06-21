@@ -4,12 +4,13 @@
 .gallery {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 .thumb {
   margin: 8px;
   flex-shrink: 1;
   flex-grow: 1;
-  overflow: auto;
+  overflow: scroll;
   cursor: all-scroll;
   min-width: 200px;
 }
