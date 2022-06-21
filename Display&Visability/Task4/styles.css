@@ -1,11 +1,12 @@
 div {
   position: relative;
-  display: inline-block;
   margin: 16px;
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-decoration-color: black;
   text-decoration-thickness: 1px;
+  text-decoration-skip: 1px;
+  box-sizing: border-box;
 }
 .tooltip {
   position: absolute;
@@ -15,4 +16,5 @@ div {
   color: white;
   border-radius: 4px;
   padding: 8px;
+  box-sizing: border-box;
 }
