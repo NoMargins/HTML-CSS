@@ -10,6 +10,8 @@
   position: relative;
   color: white;
   font-size: 16px;
+  display: inline-block;
+  margin: 0;
 }
 
 .menu-list {
@@ -22,6 +24,7 @@
   display: none;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .menu-button:hover {
