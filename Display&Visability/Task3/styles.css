@@ -20,6 +20,9 @@
   min-width: 120px;
   z-index: 1;
   display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-button:hover {
@@ -28,6 +31,7 @@
   font-size: 16px;
   color: white;
   cursor: pointer;
+  margin: 0;
 }
 
 .dropdown:hover .menu-list {
@@ -36,9 +40,8 @@
 
 .menu-item {
   padding: 16px;
-  list-style-type: none;
   margin: 0;
-  box-sizing: border-box;
+  left: 0;
 }
 
 .menu-item:hover {
