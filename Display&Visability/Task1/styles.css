@@ -1,10 +1,11 @@
-div > div {
+.comtainer > div {
   width: 100px;
   height: 100px;
   background: coral;
 }
 .container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .not_displayed {
