@@ -1,11 +1,10 @@
-div {
+.text {
   position: relative;
   margin: 16px;
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-decoration-color: black;
   text-decoration-thickness: 1px;
-  text-decoration-skip: 1px;
   box-sizing: border-box;
 }
 .tooltip {
@@ -17,4 +16,8 @@ div {
   border-radius: 4px;
   padding: 8px;
   box-sizing: border-box;
+  display: none;
+}
+.text:hover .tooltip {
+  display: block;
 }
