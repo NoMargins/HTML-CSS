@@ -1,6 +1,7 @@
 .dropdown {
   margin: 16px;
   box-sizing: border-box;
+  display: inline-block;
 }
 .menu-button {
   box-sizing: border-box;
