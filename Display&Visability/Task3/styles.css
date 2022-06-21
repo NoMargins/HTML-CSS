@@ -4,6 +4,7 @@
 }
 .menu-button {
   padding: 16px;
+  box-sizing: border-box;
   background-color: darkgreen;
   opacity: 0.8;
   position: relative;
