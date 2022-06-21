@@ -10,7 +10,6 @@
   margin: 8px;
   flex-shrink: 1;
   flex-grow: 1;
-  overflow: scroll;
+  overflow: auto;
   cursor: all-scroll;
-  min-width: 300px;
 }
