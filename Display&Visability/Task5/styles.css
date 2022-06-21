@@ -1,12 +1,17 @@
+* {
+  box-sizing: border-box;
+}
 .gallery {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .thumb {
   margin: 8px;
   flex-wrap: wrap;
   flex-shrink: 1;
   flex-grow: 1;
-  overflow: scroll;
+  overflow: auto;
   cursor: all-scroll;
+  min-width: 300px;
 }
