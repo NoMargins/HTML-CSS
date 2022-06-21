@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 .gallery {
@@ -12,4 +12,16 @@
   flex-grow: 1;
   overflow: auto;
   cursor: all-scroll;
+} */
+
+body {
+  box-sizing: border-box;
+}
+div {
+  display: flex;
+  cursor: all-scroll;
+  overflow: scroll;
+}
+img {
+  margin: 8px;
 }
