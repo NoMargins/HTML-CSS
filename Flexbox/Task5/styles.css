@@ -11,6 +11,26 @@ h1 {
   background-color: bisque;
   flex-direction: row;
   flex-basis: 300px;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-grow: 1;
+  justify-items: space-between;
+  box-sizing: border-box;
+}
+.articles-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+h1 {
+  text-align: center;
+}
+.article {
+  margin: 8px;
+  padding: 16px;
+  background-color: bisque;
+  flex-direction: row;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  justify-items: space-between;
+  box-sizing: border-box;
 }
