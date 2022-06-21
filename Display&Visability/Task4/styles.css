@@ -2,8 +2,10 @@ div {
   position: relative;
   display: inline-block;
   margin: 16px;
-  text-decoration: underline;
+  text-decoration-line: underline;
   text-decoration-style: dotted;
+  text-decoration-color: black;
+  text-decoration-thickness: 1px;
 }
 .tooltip {
   position: absolute;
