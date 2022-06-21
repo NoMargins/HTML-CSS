@@ -28,19 +28,23 @@
   flex-direction: column;
   min-height: 100vh;
 }
-.content {
+.main_block {
+  display: flex;
+  flex-grow: 1;
+}
+.dashboard {
   background-color: pink;
   flex-grow: 1;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .sidebar {
   display: flex;
+  flex-direction: column;
   background-color: grey;
   width: 200px;
   flex-grow: 1;
-  justify-content: center;
-  align-items: center;
 }
 .news_item {
   margin-left: 16px;
