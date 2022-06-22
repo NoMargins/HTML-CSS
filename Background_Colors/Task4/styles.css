@@ -1,0 +1,26 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+}
+.image {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  margin: 16px;
+  border: 1px dotted grey;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image1 {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw1/nature1.jpeg);
+}
+
+.image2 {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw1/nature2.jpeg);
+}
+
+.image3 {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw1/nature3.jpeg);
+}
