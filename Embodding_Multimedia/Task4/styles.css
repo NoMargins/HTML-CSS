@@ -1,6 +1,8 @@
 .image-container {
   box-sizing: border-box;
   display: flex;
+  justify-content: center;
+  position: relative;
 }
 .image {
   max-width: 100%;
