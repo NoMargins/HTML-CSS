@@ -6,13 +6,12 @@
 }
 .image {
   max-width: 100%;
-  display: block;
-  margin: 0 auto;
   position: relative;
 }
-span {
-  display: block;
-  text-align: center;
+.image-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: bisque;
   font-size: 12px;
   text-transform: uppercase;
@@ -24,7 +23,6 @@ span {
   height: 50px;
   width: 200px;
   margin: auto;
-  line-height: 50px;
 }
 
 .image-button:hover {
