@@ -1,8 +1,12 @@
-.form-control {
+.form {
+  margin: 32px;
+}
+
+div {
   margin: 8px;
   box-sizing: border-box;
 }
-body {
-  box-sizing: border-box;
-  margin: 32px;
+
+span {
+  margin: 8px;
 }
