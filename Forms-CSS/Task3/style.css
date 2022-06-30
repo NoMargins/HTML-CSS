@@ -3,6 +3,8 @@
   padding-left: 35px;
   font-size: 24px;
   margin: 16px;
+  top: 16px;
+  left: 16px;
 }
 
 input[type='checkbox'] {
@@ -17,9 +19,13 @@ input[type='checkbox'] {
   background-color: #d3d3d3;
   display: inline-block;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 .checkbox input:checked + .checkmark {
   background-color: #006400;
+}
+
+body {
+  margin: 16px;
 }
