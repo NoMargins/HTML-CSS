@@ -1,9 +1,10 @@
 .form {
   margin: 32px;
   box-sizing: border-box;
+  display: block;
 }
 
 .form-control {
-  margin-bottom: 8px;
-  box-sizing: border-box;
+  display: block;
+  margin: 8px;
 }
