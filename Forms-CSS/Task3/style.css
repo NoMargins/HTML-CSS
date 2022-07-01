@@ -19,7 +19,6 @@ input[type='checkbox'] {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 0;
 }
 
 .checkbox input:checked + .checkmark {
