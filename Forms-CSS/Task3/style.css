@@ -4,7 +4,7 @@ input[type='checkbox'] {
   height: 0;
 }
 
-.checkbox {
+.label {
   display: flex;
   font-size: 24px;
   margin: 16px;
