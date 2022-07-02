@@ -1,10 +1,10 @@
 .form {
   margin: 32px;
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
 }
 
 .form-control {
-  display: block;
+  display: inline-block;
   margin: 8px;
 }
