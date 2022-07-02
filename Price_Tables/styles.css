@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
   justify-items: space-between;
+  height: 50vw;
+  top: auto;
 }
 
 .table {
