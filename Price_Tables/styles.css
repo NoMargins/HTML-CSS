@@ -20,7 +20,9 @@
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
   position: relative;
   overflow: hidden;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
   justify-items: space-between;
   top: auto;
 }
@@ -29,7 +31,6 @@ ul {
   list-style: none;
   text-align: left;
   line-height: 18px;
-  width: 380px;
   margin: 40px 0;
   padding: 0;
 }
@@ -123,7 +124,7 @@ li:nth-child(odd) {
 }
 .recktangle {
   height: 25px;
-  width: 147px;
+  min-width: 147px;
   background-color: #dc3f45;
   text-transform: uppercase;
   line-height: 25px;
@@ -136,4 +137,11 @@ li:nth-child(odd) {
   justify-content: center;
   margin-left: 268px;
   position: absolute;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+button:hover {
+  cursor: grab;
+  url(https://cdn-icons-png.flaticon.com/512/2492/2492773.png);
 }
