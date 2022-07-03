@@ -25,26 +25,23 @@ th {
   height: 40px;
 }
 
-tbody > tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
 tbody > tr:hover {
   background-color: #aaa;
   color: white;
+}
+
+tfoot {
+  font-weight: 700;
+}
+
+th {
+  background-color: aqua;
 }
 
 div {
   overflow-x: auto;
 }
 
-caption {
-  margin: 8px;
-}
-
-tfoot > tr {
-  font-weight: 700;
-}
-
-thead {
-  background-color: aqua;
+tbody > tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
