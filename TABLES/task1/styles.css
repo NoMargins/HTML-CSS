@@ -4,7 +4,6 @@ table {
   margin: 16px;
   border: 1px solid black;
   border-collapse: collapse;
-  border-spacing: 10px;
 }
 th,
 td {
