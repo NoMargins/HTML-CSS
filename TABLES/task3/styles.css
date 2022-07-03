@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+td {
+  height: 50px;
+  width: 50px;
+}
+
+table,
+td.limit {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table {
+  margin: 16px;
+}
+
+table tr.no_borders td {
+  border-style: none;
+}
+
+tr.desk:nth-child(even) td.limit:nth-child(2n + 3) {
+  background-color: black;
+}
+
+tr.desk:nth-child(odd) td.limit:nth-child(2n + 2) {
+  background-color: black;
+}
