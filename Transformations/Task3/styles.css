@@ -13,9 +13,10 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: calc(50vh - 25px);
-  left: calc(50vw - 25px);
+  top: calc(50vh - 37px);
+  left: calc(50vw - 40px);
   align-items: center;
+  justify-content: center;
 }
 
 .circle {
@@ -36,14 +37,10 @@
 }
 
 @keyframes blinking {
-  0% {
+  from {
     opacity: 0;
   }
-
-  50% {
-    opacity: 50%;
-  }
-  100% {
+  to {
     opacity: 100%;
   }
 }
@@ -52,15 +49,11 @@
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(90deg);
-  }
+
   50% {
     transform: rotate(180deg);
   }
-  75% {
-    transform: rotate(270deg);
-  }
+
   100% {
     transform: rotate(360deg);
   }
