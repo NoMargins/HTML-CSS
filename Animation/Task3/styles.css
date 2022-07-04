@@ -1,52 +1,19 @@
-@keyframes moving {
-  from {
-    left: 0;
-    opacity: 1;
-  }
-  to {
-    margin-left: 70px;
-  }
+* {
+  box-sizing: border-box;
 }
 
-@keyframes blinking {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.container {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.spinner {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 50vw;
-  top: 50vh;
-}
-
-.spinner-text {
-  font-family: monospace;
-  font-size: 16px;
+.block {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
   text-transform: uppercase;
-  animation: blinking infinite 2s;
-  animation: blinking infinite linear 2s;
-}
-
-.rect {
-  width: 10px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: black;
-  animation: moving infinite alternate 2s, blinking infinite linear 2s;
+  line-height: 100px;
+  text-align: center;
+  width: 250px;
+  height: 100px;
+  background-color: coral;
+  top: 50vh;
+  left: 50vw;
+  position: absolute;
 }
