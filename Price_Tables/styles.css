@@ -28,6 +28,7 @@
   flex-grow: 0;
   flex-wrap: wrap;
   margin: 9px;
+  top: auto;
 }
 
 ul {
@@ -85,7 +86,7 @@ li:nth-child(odd) {
   background-color: #ec632a;
 }
 
-.submit-button {
+.price-card_order-btn {
   height: 40px;
   border-radius: 20px;
   width: 155px;
@@ -107,12 +108,11 @@ li:nth-child(odd) {
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
-  box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 35px;
 }
 
-.price {
+.price-card_price {
   font-size: 55px;
   font-weight: 700;
   text-align: center;
@@ -120,7 +120,7 @@ li:nth-child(odd) {
   line-height: 105px;
 }
 
-.description-text {
+.price-card_description {
   margin: 40px 10px;
   font-size: 15px;
   font-weight: 300;
