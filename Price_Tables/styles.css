@@ -22,19 +22,19 @@
   height: 770px;
   text-align: center;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
-  position: relative;
-  overflow: hidden;
   flex-shrink: 0;
   flex-grow: 0;
-  flex-wrap: wrap;
   margin: 9px;
-  top: auto;
+  overflow: hidden;
 }
 
-ul {
+div {
+  margin-bottom: 40px;
+}
+
+.price-card_options-list ul {
   list-style: none;
   text-align: left;
-  line-height: 18px;
   margin: 40px 0;
   padding: 0;
 }
@@ -68,6 +68,10 @@ ul.plan-list > li.plan-item:before {
   left: 6%;
 }
 
+.price-card_options-list {
+  position: relative;
+}
+
 li:nth-child(odd) {
   background-color: #2a3438;
   mix-blend-mode: normal;
@@ -96,6 +100,8 @@ li:nth-child(odd) {
   color: white;
   border: 0;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -121,26 +127,26 @@ li:nth-child(odd) {
 }
 
 .price-card_description {
-  margin: 40px 10px;
+  /* margin: 40px 10px; */
   font-size: 15px;
   font-weight: 300;
 }
 .recktangle {
   height: 25px;
-  width: 147px;
+  width: 150px;
   background-color: #dc3f45;
   text-transform: uppercase;
   line-height: 25px;
   text-align: center;
-  transform: rotate(45deg);
+  transform: translateY(-785px) translateX(265px) rotate(45deg);
   margin-top: 30px;
   font-size: 14px;
   font-weight: 700;
   box-sizing: border-box;
   justify-content: center;
-  margin-left: 264px;
-  position: absolute;
   flex-shrink: 0;
   flex-grow: 0;
   flex-wrap: nowrap;
+  /* width: 380px; */
+  /* height: 770px; */
 }
