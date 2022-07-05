@@ -39,11 +39,11 @@ body {
 
 .nav-list-item {
   background-color: #808080;
-  color: #fff;
-  line-height: 1.75em;
+  height: 1.75em;
   margin-bottom: 0.5em;
+  text-align: left;
+  align-items: center;
   display: flex;
-  text-align: center;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
