@@ -31,7 +31,7 @@ html {
 .nav-list {
   padding: 0;
   list-style: none;
-  width: 20vw;
+  width: 19vw;
   display: flex;
   flex-direction: column;
   margin: 1.5em 0.5em;
@@ -52,6 +52,7 @@ html {
   color: white;
   text-decoration: none;
   white-space: nowrap;
+  height: 2em;
 }
 
 @media screen and (max-width: 599px) {
