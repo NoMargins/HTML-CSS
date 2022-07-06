@@ -30,10 +30,10 @@ html {
 }
 
 .nav-list {
+  display: flex;
   padding: 0;
   list-style: none;
   width: 18vw;
-  display: flex;
   flex-direction: column;
   margin: 1.5em 0.5em;
 }
