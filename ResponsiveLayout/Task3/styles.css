@@ -31,20 +31,18 @@ body {
 
 .nav-list {
   padding: 0;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
-  list-style: none;
 }
 
 .nav-list-item {
   background-color: #808080;
-  height: 1.75em;
-  line-height: 2em;
+  color: #fff;
+  height: 2em;
   margin-bottom: 0.5em;
-  font-size: 1.25em;
-  text-align: left;
-  align-items: center;
   display: flex;
+  align-items: center;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
