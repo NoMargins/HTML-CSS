@@ -60,6 +60,11 @@ span {
     display: flex;
     width: calc(100vw / 3 * 2);
   }
+  .square {
+    display: flex;
+    flex-grow: 1;
+    width: calc(100vw / 3);
+  }
 }
 
 @media screen and (max-width: 599px) {
