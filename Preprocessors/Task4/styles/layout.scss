@@ -1,0 +1,75 @@
+@import 'variables.scss';
+
+.container {
+  display: flex;
+  width: 100vw;
+  flex-grow: 1;
+  @include medium-screen {
+    flex-direction: column;
+  }
+  @include large-screen {
+    flex-direction: row;
+  }
+  @include small-screen {
+    flex-direction: column;
+  }
+}
+
+.square {
+  display: flex;
+  min-height: 200px;
+  flex-grow: 1;
+  @include large-screen {
+    width: calc(100vw / 3);
+  }
+  @include small-screen {
+    width: 100vw;
+  }
+}
+
+.square1 {
+  background-color: #ff7f50;
+  @include medium-screen {
+    display: flex;
+    width: 50vw;
+  }
+}
+
+.square2 {
+  background-color: #006400;
+  @include medium-screen {
+    display: flex;
+    width: 50vw;
+  }
+}
+
+.square3 {
+  background-color: #0ff;
+  @include medium-screen {
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    line-height: 100%;
+  }
+}
+
+span {
+  text-transform: lowercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: $unit;
+  background-color: #faebd7;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.main-content {
+  @include medium-screen {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+  }
+  @include large-screen {
+    display: flex;
+    width: calc(100vw / 3 * 2);
+  }
+}
