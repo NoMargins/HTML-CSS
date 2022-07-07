@@ -20,11 +20,14 @@
     width: 100px;
     height: 100px;
     margin: 8px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #ff7f50;
     @include small-screen-size {
-      background-color: #ff7f50;
+      background-color: #8a2be2;
     }
     @include medium-screen-size {
-      background-color: #8a2be2;
+      background-color: #a61;
     }
     @include large-screen-size {
       background-color: #c47;
