@@ -6,7 +6,8 @@
     flex-direction: row;
     list-style-type: none;
     align-items: center;
-    position: relative; }
+    position: relative;
+    margin: 0; }
     .header .menu .menu__item {
       margin: 0px 8px;
       cursor: pointer;
@@ -35,7 +36,7 @@
     z-index: 1;
     list-style-type: none; }
     .header .submenu .submenu__item {
-      padding: 0px 8px;
+      padding: 8px;
       text-transform: uppercase;
       line-height: 3em;
       cursor: pointer; }
