@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+  @media screen and (orientation: landscape) {
+    .container {
+      flex-direction: row; } }
+  @media screen and (orientation: portrait) {
+    .container {
+      flex-direction: column; } }
+  .container .square {
+    width: 100px;
+    height: 100px;
+    margin: 8px; }
+    @media screen and (max-width: 599px) {
+      .container .square {
+        background-color: #ff7f50; } }
+    @media screen and (min-width: 900px) and (max-width: 1199px) {
+      .container .square {
+        background-color: #8a2be2; } }
+    @media screen and (min-width: 1200px) {
+      .container .square {
+        background-color: #c47; } }
+
+/*# sourceMappingURL=styles.css.map */

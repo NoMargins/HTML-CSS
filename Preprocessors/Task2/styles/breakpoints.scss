@@ -1,0 +1,33 @@
+$sm: 600px;
+$md: 900px;
+$lg: 1200px;
+
+@mixin small-screen-size {
+  @media screen and (max-width: $sm - 1) {
+    @content;
+  }
+}
+
+@mixin medium-screen-size {
+  @media screen and (min-width: $md) and (max-width: $lg - 1) {
+    @content;
+  }
+}
+
+@mixin large-screen-size {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin horizontal-orientation {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin verical-orientation {
+  @media screen and (orientation: portrait) {
+    @content;
+  }
+}
