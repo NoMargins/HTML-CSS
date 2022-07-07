@@ -19,9 +19,12 @@
     font-weight: 700;
     color: #fff;
     background-color: #fb0;
-    border-radius: 4px; }
+    border-radius: 4px;
+    cursor: pointer; }
   .header .nav-list__item_selected {
     background-color: #ff7f50; }
+  .header .nav-list__item:hover {
+    opacity: 0.7; }
 
 html {
   font-size: 16px;
