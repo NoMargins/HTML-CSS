@@ -1,0 +1,33 @@
+.header {
+  height: 56px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row; }
+  .header .header__navigation {
+    display: flex;
+    align-items: center; }
+  .header .nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 0;
+    padding: 0; }
+  .header .nav-list__item {
+    margin-left: 8px;
+    padding: 8px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fb0;
+    border-radius: 4px; }
+  .header .nav-list__item_selected {
+    background-color: #ff7f50; }
+
+html {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=styles.css.map */
