@@ -24,13 +24,13 @@
     padding: $unit;
     font-weight: 700;
     color: $text-color-secondary;
-    background-color: $color-primary;
+    background-color: $color-secondary;
     border-radius: $border-radius;
     cursor: pointer;
   }
 
   .nav-list__item_selected {
-    background-color: $color-secondary;
+    background-color: $color-primary;
   }
 
   .nav-list__item:hover {
