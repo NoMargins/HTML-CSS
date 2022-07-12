@@ -1,0 +1,105 @@
+.footer-desktop {
+  font-size: 18px;
+  color: rgba(43, 41, 45, 0.6);
+  display: flex;
+  flex-direction: row;
+
+  &__description {
+    line-height: 26px;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 43px;
+
+    &__name {
+      font-size: 20px;
+      line-height: 25px;
+      margin-left: 15px;
+      color: rgba(43, 41, 45, 1);
+    }
+    &__description {
+      color: rgba(43, 41, 45, 0.6);
+      margin-left: 15px;
+      font-size: 18px;
+    }
+  }
+  &__column__name {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    color: rgba(43, 41, 45, 1);
+    margin-bottom: 18px;
+  }
+  &__line {
+    width: 100%;
+    border-top: 1px solid rgba(43, 41, 45, 0.1);
+    margin-top: 59px;
+    margin-bottom: 13px;
+  }
+}
+
+.about-company-desktop {
+  margin-left: 130px;
+  width: 360px;
+}
+
+.downloads-desktop {
+  margin-top: 25px;
+}
+
+.additional-navigation-desktop {
+  display: flex;
+  flex-direction: row;
+  &__column {
+    width: 265px;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  &__list {
+    font-size: 18px;
+    margin-top: 18px;
+  }
+
+  &__list__item {
+    line-height: 30px;
+  }
+}
+
+.underline-navigation-desktop {
+  display: flex;
+  flex-direction: row;
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    margin-left: 130px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    width: 130px;
+    box-sizing: border-box;
+    &__item {
+      margin-right: 18px;
+      font-size: 14px;
+    }
+  }
+  &__icons {
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-right: 130px;
+    display: flex;
+    flex-direction: row;
+    &__item {
+      margin-right: 23px;
+      margin-top: -15px;
+      margin-bottom: 20px;
+    }
+  }
+}

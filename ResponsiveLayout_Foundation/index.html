@@ -4,8 +4,594 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Foundation Landing Page</title>
   </head>
-  <body></body>
+  <body>
+
+    <!-- header mobile version -->
+        <header class="header-mobile">
+        <div class="header__mobile">
+       <div class="logo__mobile-screen">
+        <img class="logo__image" src="img/icon.png" alt="main logo" />
+        <div class="logo__name">
+        <p><b>Foundation</b></p>
+      </div>
+      <div class="header__menu-button">
+        <img src="img/icon-hamburger.png" alt="menu button">
+      </div>
+       </div>
+       </div>
+             <div class="main-body-mobile">
+        <div class="main-body-mobile__text">
+        <h1 class="main-body-mobile__title title">Build stunning websites & apps.</h1>
+        <p class="main-body-mobile__description description">
+          Create live segments and target the right people for messages based on
+          their behaviors.
+        </p>
+        <button class="main-body-mobile__button button get-started__btn">Get Started</button>
+        <button class="main-body-mobile__button button learn-more__btn header__learn-more__button">Learn More</button>
+        </div>
+        <img src="img/ouch.png" class="main-body-mobile__image" alt="main image"/>
+        </div>
+      </div>
+    </header>
+       
+       
+       <!-- header desktop version -->
+    <header class="header-desktop">
+          <div class="header__desktop">
+      <div class="logo__full-screen">
+        <img class="logo__image" src="img/icon.png" alt="main logo" />
+        <div class="logo__name">
+        <p><b>Foundation</b> 
+            <br><span class="logo__name__signature">Startup landing template</span></p>
+      </div>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-list__item nav-list__first-item"><b>Home</b></li>
+          <li class="nav-list__item">Stories</li>
+          <li class="nav-list__item nav-list__third-item">Library <img class="arrov-icon-header" src="img/arrow.png" alt="menu button"> </li>
+        </ul>
+      </nav>
+      <button class="header__button button">Get Started</button>
+      </div>      
+
+      <div class="main-body-desktop">
+        <div class="main-body-desktop__text">
+        <h1 class="main-body-desktop__title title">Build stunning 
+            websites & apps.</h1>
+        <p class="main-body-desktop__description description">
+          Create live segments and target the right people for messages based on
+          their behaviors.
+        </p>
+        <button class="main-body-desktop__button button get-started__btn">Get Started</button>
+        <button class="main-body-desktop__button button learn-more__btn header__learn-more__button">Learn More</button>
+        </div>
+        <img src="img/ouch.png" class="main-body-desktop__image" alt="main image"/>
+        </div>
+      </div>
+    </header>
+
+    <!-- what-is-it-about -->
+    <section class="what-is-it">
+        <div class="what-is-it__block what-is-it__first-block">
+            <p><b>What is it about?</b></p>
+            <p>Building a website for a startup that looks amazing is not a rocket science anymore.</h4>
+        </div>
+        <div class="what-is-it__block what-is-it__second-block">
+            <p class="what-is-it__title"><b>What is it for?</b></p>
+            <p class="what-is-it__description description">Startups, small companies and teams, entrepreneurs and web developers.</p>
+        </div>
+    </section>
+  
+   
+    <!-- our auditory desktop -->
+    <section class="auditory-imgs">
+        <img class="auditory-img__img" src="img/logo-nyt.png" alt="The New York Times">
+        <img class="auditory-img__img" src="img/logo-forbes.png" alt="Forbes">
+        <img class="auditory-img__img" src="img/logo-apple.png" alt="Apple">
+        <img class="auditory-img__img" src="img/logo-mashable.png" alt="Mashable">
+        <img class="auditory-img__img" src="img/logo-wsj.png" alt="Wall Street Journal">
+        <img class="auditory-img__img" src="img/logo-google.png" alt="Google">
+    </section>
+
+    <!-- section Features mobile -->
+    <section class="features-mobile">
+         <div class="features-mobile__main">  
+         <h4 class="features-mobile__subtitle subtitle">Acquire Customers</h4>
+            <h2 class="features-mobile__title title">Easily find leads and customers</h2>
+            <p class="features-mobile__description description">Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
+            <div class="features-mobile__image">
+                <img class="features-mobile__image__img" src="img/tip-asquire-customer.png" alt="bird image">  
+                <div class="features-mobile__image__text signature-text">A better way to acquire new users</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engage-users-mobile">
+       <div class="engage-users-mobile__main">  
+         <h4 class="engage-users-mobile__subtitle subtitle">Acquire Customers</h4>
+            <h2 class="engage-users-mobile__title title">Easily find leads and customers</h2>
+            <p class="engage-users-mobile__description description">Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
+            <div class="engage-users-mobile__image">
+                <img class="engage-users-mobile__image__img" src="img/tip-engage-user.png" alt="create image">  
+                <div class="engage-users-mobile__image__text signature-text">Knowledge base and smart self-service</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-mobile">
+       <div class="support-mobile__main">  
+         <h4 class="support-mobile__subtitle subtitle">Support</h4>
+          <h2 class="support-mobile__title title">The best customer experiences</h2>
+         <p class="support-mobile__description description">A beautifully simple system for tracking, prioritizing, and solving customer support tickets.</p>
+         <div class="support-mobile__image">
+                <img class="support-mobile__image__img" src="img/tip-support.png" alt="TV image">  
+                <div class="support-mobile__image__text signature-text">Live chat and messaging</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section Features desktop -->
+    <section class="features-desktop">
+         <div class="border-image__first"><img class="border-image" src="img/hidden-ouch.png" alt="Features section image"></div>   
+         <div class="features-desktop__main">  
+         <h4 class="features-desktop__subtitle subtitle">Features</h4>
+            <h2 class="features-desktop__title title">Easily find leads and customers</h2>
+            <p class="features-desktop__description description">Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
+            <div class="aquire-new-custs-desktop__title__blue">
+                <img src="img/icon-compas.png" alt="compas icon">  
+                <span class="aquire-new-custs-desktop__title__blue__text"><b>Acquire new customers</b></span>
+            </div>
+            <p class="aquire-new-custs-desktop__some-description">Everything you need to start building – including open-source code, documentation.</p>
+            <div class="aquire-new-custs-desktop__title__underlined"><img src="img/icon-building.png" alt="building icon"><b><span class="aquire-new-custs-desktop__title__text">Engage users </b></span></div>
+            <div class="aquire-new-custs-desktop__title__underlined"><img src="img/icon-bucket.png" alt="building icon"><b><span class="aquire-new-custs-desktop__title__text">Develop across platforms </b></span></div>
+         </div>    
+         <div class="border-image-desktop"><img class="border-image__second" src="img/invision-screen.png" alt="Features section image"></div>   
+        </div>
+    </section>
+
+    <!-- team inbox mobile section -->
+    <section class="team-inbox-mobile">
+            <img class="team-inbox-mobile__image" src="img/wheel.png" alt="fortune wheel image">
+            <h4 class="team-inbox-mobile__subtitle subtitle">Team Inbox</h4>
+            <h2 class="team-inbox-mobile__title title">Manage conversations</h2>
+            <p class="team-inbox-mobile__description description">One place to manage and respond to all conversations with leads and users. Receive messages from leads.</p>
+            <div class="team-inbox-mobile_citation">
+                <span>“Great widgets. Great selection. Great design and <b>easy to implement</b>. Definitely a huge time saver for a web developer!”</span>
+                  <div class="team-inbox-mobile__user">  
+                    <img class="team-inbox-mobile__user__photo" src="img/user-avatar.png" alt="User photo">
+                </div>
+            <div class="team-inbox-mobile__user user-name">
+            <span class="team-inbox-mobile__user__name"><b> Viella Malkovich </b></span><br>
+            <span class="team-inbox-mobile__user__position">Creative Director at Johnson</span>
+        </div>
+    </section>
+    <!-- team inbox desktop section -->
+    <section class="team-inbox-desktop">
+        <div class="team-inbox-desktop__first-column team-inbox__column">
+            <img class="team-inbox-desktop__first-column__image" src="img/wheel.png" alt="fortune wheel image">
+            <span class="team-inbox-desktop__first-column__text">Connect with customers and grow faster</span>
+        </div>
+        <div class="team-inbox-desktop__second-column team-inbox__column">
+            <h4 class="team-inbox-desktop__second-column__subtitle">Team Inbox</h4>
+            <h2 class="team-inbox-desktop__second-column__title title">Manage conversations</h2>
+            <p class="team-inbox-desktop__second-column__description description">One place to manage and respond to all conversations with leads and users. Receive messages from leads.</p>
+            <div class="team-inbox-desktop__second-column__citation">
+                <span>“Great widgets. Great selection. Great design and <b>easy to implement</b>. Definitely a huge time saver for a web developer!”</span>
+                <div class="team-inbox-desktop__second-column__user user-photo">
+                  <div class="team-inbox-desktop__second-column__user__photo">  
+                    <img src="img/user-avatar.png" alt="User photo">
+                </div>
+            <div class="team-inbox-desktop__second-column__user__name user-name">
+            <span class="team-inbox-desktop__author-name"><b> Viella Malkovich </b></span><br>
+            <span class="team-inbox-desktop__author-position">Creative Director at Johnson</span>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Communicate Better mobile section    -->
+        <section class="communicate-better-mobile">
+            <div class="communicate-better-mobile__main">
+                <h4 class="communicate-better-mobile__subtitle subtitle">Communicate Better</h4>
+                <h2 class="communicate-better-mobile__title title">Built for busy small teams</h2>
+                <p class="communicate-better-mobile__description description">Three products that can be used independently or combined together for your company’s needs.</p>
+                <button class="get-started__btn communicate-better-mobile__button"><b>Get Started</b></button>
+                <img class="communicate-better-mobile__image" alt="mobile communications" src="img/hand-with-phone.png">
+                <p class="communicate-better-mobile__text signature-text">A better way to acquire new users</p>
+            <div class="communicate-better-mobile__line"></div>
+                <p class="communicate-better-mobile__info__first"><b>Subscriptions.</b> Foundation works with the tools and services you already use every day.</p>
+                <p><a href="#"><b>Learn more about subscriptions</b></a></p>
+                <p class="communicate-better-mobile__info__second"><b>Flexible Hours.</b> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.</p>
+                <p><a href="#"><b>Get more info about hours</b></a></p>
+                <p class="communicate-better-mobile__info__third"><b>Fast Communication.</b> We offer measures like 2FA and SSO to ensure the safety of your data.</span>
+                <p><a href="#"><b>Communication guidelines</b></a></p>
+    </div>
+</section>
+    <!-- Communicate Better desktop section    -->
+        <section class="communicate-better-desktop">
+            <div class="communicate-better-desktop__main">
+                <div class="communicate-better-desktop__main__first-column">
+                    <h4 class="communicate-better-desktop__subtitle subtitle">Communicate Better</h4>
+                    <h2 class="communicate-better-desktop__title title">Built for busy small teams</h2>
+                    <p class="communicate-better-desktop__description description">Three products that can be used independently or combined together for your company’s needs.</p>
+                    <button class="get-started__btn communicate-better-desktop__button"><b>Get Started</b></button>
+    </div>
+            <div class="communicate-better-desktop__main__second-column">
+                <img class="communicate-better-desktop__image" alt="mobile communications" src="img/hand-with-phone.png">
+                <p class="communicate-better-desktop__main__second-column__text">A better way to acquire new users</p>
+            </div>
+            </div>
+            <div class="communicate-better-desktop__line"></div>
+        <div class="communicate-better-desktop__info">
+            <div class="communicate-better-desktop__info__text">
+                <p class="communicate-better-desktop__info__first"><b>Subscriptions.</b> Foundation works with the tools and services you already use every day.</p>
+                <p><a href="#"><b>Learn more about subscriptions</b></a></p>
+            </div>
+            <div class="communicate-better-desktop__info__text">
+                <p class="communicate-better-desktop__info__second"><b>Flexible Hours.</b> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.</p>
+                <p><a href="#"><b>Get more info about hours</b></a></p>
+    </div>
+    <div class="communicate-better-desktop__info__text">
+        <p class="communicate-better-desktop__info__third"><b>Fast Communication.</b> We offer measures like 2FA and SSO to ensure the safety of your data.</span>
+        <p><a href="#"><b>Communication guidelines</b></a></p>
+    </div>
+    </div>
+</section>
+
+<!-- Engage Visitors desktop section -->
+<section class="engage-visitors-mobile">
+    <div class="engage-visitors-mobile__main">
+         <h4 class="engage-visitors-mobile__subtitle subtitle">Engage Visitors</h4>
+        <h2 class="engage-visitors-mobile__title title">Understand your audience</h2>
+        <p class="engage-visitors-mobile_description description">Early stage company? Eligible applicants get all of our products for just $49 a month.</p>
+                    <button class="get-started__btn engage-visitors-mobile__gst_button">Get Started</button>
+                    <button class="learn-more__btn engage-visitors-mobile__lrnmr-button">Learn More</button>
+        <div class="engage-visitors-mobile__images">
+            <div class="engage-visitors-mobile__imageNo">
+                <img src="img/user-1.png" alt="Developers image">
+                <span class="engage-visitors-mobile__imageNo_text"><b>Developers</b></span>
+            </div>
+            <div class="engage-visitors-mobile__imageNo">
+                <img src="img/user-2.png" alt="Entertainment image">
+                <span class="engage-visitors-mobile__imageNo_text"><b>Entertainment</b></span>
+            </div>
+                <div class="engage-visitors-mobile__imageNo">
+                <img src="img/user-3.png" alt="Athletes image">
+                <span class="engage-visitors-mobile__imageNo_text"><b>Athletes</b></span>
+            </div>
+                <div class="engage-visitors-mobile__imageNo">
+                <img src="img/user-4.png" alt="Creators image">
+                <span class="engage-visitors-mobile__imageNo_text"><b>Creators</b></span>
+            </div>
+            </div>
+</section>
+<!-- Engage Visitors desktop section -->
+<section class="engage-visitors-desktop">
+    <div class="engage-visitors-desktop__main">
+         <h4 class="engage-visitors-desktop__subtitle subtitle">Engage Visitors</h4>
+        <h2 class="engage-visitors-desktop__title title">Understand your audience</h2>
+        <p class="engage-visitors-desktop_description description">Early stage company? Eligible applicants get all of our products for just $49 a month.</p>
+                    <button class="get-started__btn button">Get Started</button>
+                    <button class="learn-more__btn button">Learn More</button>
+    </div>
+        <div class="engage-visitors-desktop__images">
+            <div class="engage-visitors-desktop__imageNo">
+                <img src="img/user-1.png" alt="Developers image">
+                <span class="engage-visitors-desktop__imageNo_text"><b>Developers</b></span>
+            </div>
+            <div class="engage-visitors-desktop__imageNo">
+                <img src="img/user-2.png" alt="Entertainment image">
+                <span class="engage-visitor-desktops__imageNo_text"><b>Entertainment</b></span>
+            </div>
+                <div class="engage-visitors-desktop__imageNo">
+                <img src="img/user-3.png" alt="Athletes image">
+                <span class="engage-visitors-desktop__imageNo_text"><b>Athletes</b></span>
+            </div>
+                <div class="engage-visitors-desktop__imageNo">
+                <img src="img/user-4.png" alt="Creators image">
+                <span class="engage-visitors-desktop__imageNo_text"><b>Creators</b></span>
+            </div>
+            </div>
+</section>
+
+ <!-- Trusted by Customers common section -->
+ <section class="trusted-by__main">
+    <div class="trusted-by__images auditory-imgs">
+        <img class="auditory-img__img" src="img/logo-nyt.png" alt="The New York Times">
+        <img class="auditory-img__img" src="img/logo-forbes.png" alt="Forbes">
+        <img class="auditory-img__img" src="img/logo-apple.png" alt="Apple">
+        <img class="auditory-img__img" src="img/logo-mashable.png" alt="Mashable">
+        <img class="auditory-img__img" src="img/logo-wsj.png" alt="Wall Street Journal">
+        <img class="auditory-img__img" src="img/logo-google.png" alt="Google">
+ </div>
+ <!-- Trusted by Customers mobile section -->
+  <div class="trusted-by-mobile__main">
+        <p class="trusted-by-mobile__subtitle"><b>Trusted by the world’s most innovative businesses – big and small</b></p>
+        <p class="trusted-by-mobile__citation">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”</p>
+          <span class="author-name"><b> Viella Malkovich </b></span><br>
+          <span class="author-position">Creative Director at Johnson</span>
+        <form class="dots">
+                <input type="radio" name="radio" class="custom-radio" checked> 
+                <input type="radio" name="radio" class="custom-radio"> 
+                <input type="radio" name="radio" class="custom-radio"> 
+        </form>
+      <img class="trusted-by__image" src="img/balloon.png" alt="baloon image">
+  </div>
+</section>
+
+  <!-- Trusted by Customers desktop section -->
+ <div class="trusted-by-desktop__text">
+        <p class="trusted-by-desktop__subtitle"><b>Trusted by the world’s most innovative businesses – big and small</b></p>
+        <p class="trusted-by-desktop__citation">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”</p>
+        <div class="trusted-by-desktop__user user-name">
+            <span class="author-name"><b> Viella Malkovich </b></span><br>
+            <span class="author-position">Creative Director at Johnson</span>
+        <form class="dots">
+                <input type="radio" name="radio" class="custom-radio" checked> 
+                <input type="radio" name="radio" class="custom-radio"> 
+                <input type="radio" name="radio" class="custom-radio"> 
+        </form>
+        </div>
+    </div>
+<img class="trusted-by__image" src="img/balloon.png" alt="baloon image">
+</section>
+
+ <!-- Vacancies mobile section -->
+<section class="hiring-mobile">
+    <div class="hiring-mobile__main>">
+    <h2 class="hiring-mobile__title title">We're hiring</h2>
+    <p class="hiring-mobile__description description">We’re a team of lifelong learners. We’re equal parts left and right brained.</p>
+    <button class="get-started__btn hiring-mobile__btn">More about Company</button>
+</div>
+    <div class="hiring-mobile__vacancies">
+        <button class="hiring-mobile__vacancies__button">
+            <div class="hiring-mobile__vacancies__button__title"><b>Front-End Developer</b></div>
+             <div class="hiring-mobile__vacancies__button__type">Los Angeles / Remote</div>
+        </button>
+        <button class="hiring-mobile__vacancies__button">
+            <div class="hiring-mobile__vacancies__button__title"><b>Community Manager</b></div>
+             <div class="hiring-mobile__vacancies__button__type">New York / Full-Time</div>
+        </button>
+        <button class="hiring-mobile__vacancies__button">
+            <div class="hiring-mobile__vacancies__button__title"><b>UX/UI Designer</b></div>
+             <div class="hiring-mobile__vacancies__button__type">New York / Full-Time</div>
+        </button>
+    </div>
+</section>
+    <!-- Vacancies desktop section -->
+<section class="hiring-desktop">
+    <div class="hiring-desktop__main>">
+    <h2 class="hiring-desktop__title title">We're hiring</h2>
+    <p class="hiring-desktop__description description">We’re a team of lifelong learners. We’re equal parts left and right brained.</p>
+    <button class="get-started__btn hiring-desktop__btn">More about Company</button>
+</div>
+    <div class="hiring-desktop__vacancies">
+        <button class="hiring-desktop__vacancies__button">
+            <div class="hiring-desktop__vacancies__button__title"><b>Front-End Developer</b></div>
+             <div class="hiring-desktop__vacancies__button__type">Los Angeles / Remote</div>
+        </button>
+        <button class="hiring-desktop__vacancies__button">
+            <div class="hiring-desktop__vacancies__button__title"><b>Community Manager</b></div>
+             <div class="hiring-desktop__vacancies__button__type">New York / Full-Time</div>
+        </button>
+        <button class="hiring-desktop__vacancies__button">
+            <div class="hiring-desktop__vacancies__button__title"><b>UX/UI Designer</b></div>
+             <div class="hiring-desktop__vacancies__button__type">New York / Full-Time</div>
+        </button>
+    </div>
+</section>
+
+   
+      <!-- Start Trial mobile section -->
+ <section class="start-trial-mobile">
+    <div class="start-trial-mobile__main">
+        <img
+          src="img/illustration-window.png"
+          class="start-trial-mobile__img"
+          alt="We are waiting for your subscription!"
+        />
+        <h3 class="start-trial-mobile__title">Start your free trial.</h3>
+        <p class="start-trial-mobile__description">
+          Get notified about company updates, news and blog posts. We hate spam.
+        </p>
+        <form clas="start-trial-mobile__form" method="submit" encrypt="text/plain">
+          <input class="start-trial-mobile__trial-email"  name="email" type="email" value="Enter your email" />
+          <button class="header__button get-started__btn button">Get Started</button>
+        </form>
+          <p class="start-trial-mobile__signature-text">
+            Free 14-day trial · Easy setup · Cancel any time. Check out
+            <a class="text-link" href="#">Terms of Use</a>
+          </p>
+      </div>
+      </section>
+ 
+      <!-- Start Trial desktop section -->
+    <div class="start-trial-desktop__main">
+      <div class="start-trial-desktop__img">
+        <img
+          src="img/illustration-window.png"
+          class="start-trial-desktop__img"
+          alt="We are waiting for your subscription!"
+        />
+      </div>
+      <div class="start-trial-desktop__text">
+        <h3 class="start-trial-desktop__title">Start your free trial.</h3>
+        <p class="start-trial-desktop__description">
+          Get notified about company updates, news and blog posts. We hate spam.
+        </p>
+        <form clas="start-trial-desktop__form" method="submit" encrypt="text/plain">
+          <input class="start-trial-desktop__trial-email"  name="email" type="email" value="Enter your email" />
+          <button class="header__button get-started__btn button">Get Started</button>
+        </form>
+        <div class="start-trial-desktop__signature">
+          <p class="start-trial-desktop__signature-text">
+            Free 14-day trial · Easy setup · Cancel any time. Check out
+            <a class="text-link" href="#">Terms of Use</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+        <!--footer mobile-->
+    <footer class="footer-mobile">
+      <div class="footer-mobile-navigation">
+        <div class="about-company-mobile">
+          <div class="footer-mobile__logo">
+            <div class="footer-mobile__logo__image">
+                <img class="footer-mobile__logo__image" src="img/icon-dark.png" alt="main logo" />
+            </div>
+            <div class="footer-mobile__logo__text">
+              <div class="footer-mobile__logo__name"><b>Foundation</b></div>
+              <div class="footer-mobile__logo__description">Startup landing template</div>
+            </div>
+          </div>
+          <p class="footer-mobile__description">
+            Foundation is a website template for startups and small teams. It
+            helps to build a website in no time.
+          </p>
+          <div class="downloads-mobile">
+            <img
+              class="downloads-mobile__item"
+              src="img/app-store.png"
+              alt="Apple Store Download"
+            />
+            <img
+              class="downloads-mobile__item"
+              src="img/google-play.png"
+              alt="Google Play Download"
+            />
+          </div>
+        </div>
+        <div class="additional-navigation-mobile">
+          <div class="additional-navigation-mobile__column">
+            <div class="footer-desktop__column__name">Product</div>
+            <ul class="additional-navigation-desktop_list">
+              <li class="additional-navigation-mobile__list__item">Acquire Users</li>
+              <li class="additional-navigation-mobile__list__item">Content Marketing</li>
+              <li class="additional-navigation-mobile__list__item">Website Template</li>
+              <li class="additional-navigation-mobile__list__item">Virtual Inbox</li>
+              <li class="additional-navigation-mobile__list__item">Customer Management</li>
+            </ul>
+          </div>
+          </div>
+          <div class="additional-navigation-mobile__column">
+            <div class="footer-mobile__column__name">Company</div>
+            <ul class="additional-navigation-mobile_list">
+              <li class="additional-navigation-mobile__list__item">About Foundation</li>
+              <li class="additional-navigation-mobile__list__item">Brand Guidelines</li>
+              <li class="additional-navigation-mobile__list__item">Press Kit</li>
+              <li class="additional-navigation-mobile__list__item">Support</li>
+            </ul>
+        </div>
+        </div>
+        <div class="underline-navigtion-mobile">
+          <div class="underline-navigtion-mobile__row">
+          <nav class="underline-navigation-mobile__text">
+            <ul class="underline-navigation-mobile_list">
+              <li class="underline-navigation-mobile__list__item">Terms</li>
+              <li class="underline-navigation-mobile__list__item">Privacy</li>
+              <li class="underline-navigation-mobile__list__item">License</li>
+            </ul>
+          </nav>
+          </div>
+          <div class="underline-navigtion-mobile_row">
+          <nav class="underline-navigation-mobile__icons">
+            <img class="underline-navigation-mobile__icons__item" src="img/social-twitter.png" alt="Find us on Twitter" />
+            <img class="underline-navigation-mobile__icons__item" src="img/social-fb.png" alt="Find us on Facebook" />
+            <img class="underline-navigation-mobile__icons__item" src="img/social-linkedIn.png" alt="Find us on LinkedIn" />
+          </nav>
+          </div>
+    </div>
+    </footer>
+
+    <!--footer desktop-->
+    <footer class="footer-desktop">
+      <div class="footer-desktop-navigation">
+        <div class="about-company-desktop">
+          <div class="footer-desktop__logo">
+            <div class="footer-desktop__logo__image">
+                <img class="footer-desktop__logo__image" src="img/icon-dark.png" alt="main logo" />
+            </div>
+            <div class="footer-desctop__logo__text">
+              <div class="footer-desktop__logo__name"><b>Foundation</b></div>
+              <div class="footer-desktop__logo__description">Startup landing template</div>
+            </div>
+          </div>
+          <p class="footer-desktop__description">
+            Foundation is a website template for startups and small teams. It
+            helps to build a website in no time.
+          </p>
+          <div class="downloads-desktop">
+            <img
+              class="downloads-desktop__item"
+              src="img/app-store.png"
+              alt="Apple Store Download"
+            />
+            <img
+              class="downloads-desktop__item"
+              src="img/google-play.png"
+              alt="Google Play Download"
+            />
+          </div>
+        </div>
+        <div class="additional-navigation-desktop">
+          <div class="additional-navigation-desktop__column">
+            <div class="footer-desktop__column__name">Product</div>
+            <ul class="additional-navigation-desktop_list">
+              <li class="additional-navigation-desktop__list__item">Acquire Users</li>
+              <li class="additional-navigation-desktop__list__item">Content Marketing</li>
+              <li class="additional-navigation-desktop__list__item">Website Template</li>
+              <li class="additional-navigation-desktop__list__item">Virtual Inbox</li>
+              <li class="additional-navigation-desktop__list__item">Customer Management</li>
+            </ul>
+          </div>
+          </div>
+          <div class="additional-navigation-desktop__column">
+            <div class="footer-desktop__column__name">Company</div>
+            <ul class="additional-navigation-desktop_list">
+              <li class="additional-navigation-desktop__list__item">About Foundation</li>
+              <li class="additional-navigation-desktop__list__item">Brand Guidelines</li>
+              <li class="additional-navigation-desktop__list__item">Press Kit</li>
+              <li class="additional-navigation-desktop__list__item">Support</li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer-desktop__line"></div>
+        <div class="underline-navigtion-desktop">
+          <div class="underline-navigtion-desktop__column">
+          <nav class="underline-navigation-desktop__text">
+            <ul class="underline-navigation-desktop__list">
+              <li class="underline-navigation-desktop__list__item">Terms</li>
+              <li class="underline-navigation-desktop__list__item">Privacy</li>
+              <li class="underline-navigation-desktop__list__item">License</li>
+            </ul>
+          </nav>
+          </div>
+          <div class="underline-navigtion-desktop__column">
+          <nav class="underline-navigation-desktop__icons">
+            <img class="underline-navigation-desktop__icons__item" src="img/social-twitter.png" alt="Find us on Twitter" />
+            <img class="underline-navigation-desktop__icons__item" src="img/social-fb.png" alt="Find us on Facebook" />
+            <img class="underline-navigation-desktop__icons__item" src="img/social-linkedIn.png" alt="Find us on LinkedIn" />
+          </nav>
+          </div>
+    </div>
+    </footer>
+  </body>
 </html>

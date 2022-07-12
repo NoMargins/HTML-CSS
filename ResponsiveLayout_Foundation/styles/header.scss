@@ -1,0 +1,130 @@
+@import 'variables.scss', 'breakpoints.scss';
+
+.logo__full-screen,
+.navigation,
+.header__button {
+  @include mobile-screen {
+    visibility: hidden;
+  }
+}
+
+.header__mobile {
+  background-color: white;
+  @include desktop-screen {
+    visibility: hidden;
+  }
+}
+
+.header__desktop {
+  @include mobile-screen {
+    visibility: hidden;
+  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo__full-screen,
+.logo__mobile-screen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo__name,
+.nav-list {
+  line-height: 25px;
+  font-size: 18px;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+.logo {
+  &__full-screen {
+    display: flex;
+    flex-direction: row;
+  }
+  &__name {
+    font-size: 18px;
+    line-height: 25px;
+    &__signature {
+      color: rgba(43, 41, 45, 0.6);
+    }
+  }
+
+  &__image {
+    margin-left: 130px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  margin-right: auto;
+  &__item {
+    justify-content: space-around;
+    margin-left: 40px;
+  }
+  &__first-item {
+    margin-left: 400px;
+  }
+
+  &__third-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 56px;
+  }
+}
+
+.arrov-icon-header {
+  margin: 0;
+  margin-left: 11px;
+}
+
+.header {
+  &__button {
+    margin-right: auto;
+  }
+  &__learn-more__button {
+    color: $theme-color-blue;
+  }
+}
+
+.main-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  &__text {
+    text-align: left;
+    left: 130px;
+    position: absolute;
+    z-index: 1;
+  }
+  &__title {
+    word-wrap: wrap;
+    width: 754px;
+    margin-top: 0;
+  }
+
+  &__description {
+    width: 400px;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 34px 0 0 0;
+  }
+
+  &__image {
+    position: relative;
+    // margin-left: 579px;
+    justify-content: right;
+    margin: 8px 25px 77px auto;
+    width: 796px;
+  }
+
+  &__button {
+    margin-top: 75px;
+  }
+}

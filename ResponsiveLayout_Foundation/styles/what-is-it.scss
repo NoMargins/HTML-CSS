@@ -1,0 +1,17 @@
+.what-is-it {
+  display: flex;
+  flex-direction: row;
+  height: 255px;
+  align-items: center;
+  &__block {
+    width: 555px;
+    font-size: 22px;
+    margin: 0;
+  }
+  &__first-block {
+    margin-left: 130px;
+  }
+  &__second-block {
+    margin-left: 29px;
+  }
+}

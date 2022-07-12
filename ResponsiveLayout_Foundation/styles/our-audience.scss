@@ -1,0 +1,22 @@
+.auditory-imgs {
+  display: flex;
+  align-items: center;
+  @include desktop-screen {
+    margin-left: 130px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    margin-right: 100px;
+  }
+  @include mobile-screen {
+    flex-direction: row;
+    max-width: 320px;
+    flex-wrap: wrap;
+    &__img {
+      width: 107px;
+      height: 54px;
+      justify-content: space-between;
+    }
+  }
+}

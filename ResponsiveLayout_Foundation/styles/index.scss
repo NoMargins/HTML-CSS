@@ -1,0 +1,142 @@
+@import 'variables.scss', 'header.scss', 'footer.scss', 'breakpoints.scss',
+  'our-audience.scss', 'what-is-it.scss', 'features-section.scss',
+  'team-inbox.scss', 'communicate-better.scss', 'trusted-by.scss',
+  'engage_visitors.scss', 'vacancies.scss', 'free-trial.scss';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+  color: $main-text-color;
+  font-weight: 400;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 18px;
+  border: 0;
+  width: 160px;
+  height: 48px;
+  border-radius: 2px;
+}
+
+.get-started__btn,
+.header__button {
+  background-color: $theme-color-blue;
+  color: #fff;
+  font-size: 18px;
+}
+
+.learn-more__btn {
+  background-color: #fff;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 78px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: -0.5px;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.user-name {
+  font-size: 16px;
+}
+
+.engage-visitors__imageNo:hover {
+  cursor: pointer;
+}
+
+.auditory-imgs {
+  filter: brightness(0);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include mobile-screen {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktop-screen {
+    width: 1400px;
+  }
+}
+
+.description {
+  font-size: 22px;
+}
+
+.header {
+  background-color: $header-background-color;
+}
+.what-is-it,
+.start-trial {
+  background-color: $what-is-it-background-color;
+}
+
+.team-inbox {
+  background-color: $team-inbox-backgound-color;
+}
+
+.engage-visitors {
+  background-color: rgba(0, 161, 198, 0.07);
+}
+
+.communicate-better__info {
+  font-size: 18px;
+}
+
+.header-mobile,
+.features-mobile,
+.engage-users-mobile,
+.support-mobile,
+.team-inbox-mobile,
+.communicate-better-mobile,
+.engage-visitors-mobile,
+.trusted-by-mobile__main,
+.hiring-mobile,
+.start-trial-mobie,
+.footer-mobile {
+  width: 320px;
+  @include desktop-screen {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+.header-desktop,
+.features-desktop,
+.engage-users-desktop,
+.support-desktop,
+.team-inbox-desktop,
+.communicate-better-desktop,
+.engage-visitors-desktop,
+.trusted-by-desktop__main,
+.hiring-desktop,
+.start-trial-desktop,
+.footer-desktop {
+  @include mobile-screen {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}

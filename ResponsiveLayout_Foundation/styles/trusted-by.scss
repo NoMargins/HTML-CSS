@@ -1,0 +1,46 @@
+.trusted-by {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__subtitle {
+    color: $trusted-color-blue;
+    margin-top: 76px;
+  }
+  &__citation {
+    width: 750px;
+    text-align: center;
+  }
+  &__user {
+    text-align: center;
+    margin-top: 34px;
+  }
+
+  &__image {
+    display: flex;
+    position: absolute;
+    margin-left: 1130px;
+    margin-top: -200px;
+  }
+}
+
+.dots {
+  margin-top: 38px;
+}
+.custom-radio {
+  border: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  appearance: none;
+  background-color: rgba(43, 41, 45, 0.2);
+}
+
+.custom-radio:checked {
+  background-color: $trusted-color-blue;
+}
