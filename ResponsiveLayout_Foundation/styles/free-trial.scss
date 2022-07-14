@@ -1,7 +1,9 @@
-.start-trial {
-  display: flex;
-  flex-direction: row;
-  height: 441px;
+.start-trial-desktop {
+  &__main {
+    display: flex;
+    flex-direction: row;
+    height: 441px;
+  }
   &__img {
     margin-top: 35px;
     width: 269px;
@@ -34,4 +36,55 @@
     font-size: 18px;
     line-height: 13px;
   }
+}
+
+.start-trial-mobile {
+  width: 320px;
+  &__main {
+    margin-left: 15px;
+    &__img {
+      width: 200px;
+      padding: 50px 60px 0 60px;
+    }
+  }
+  &__title {
+    text-align: center;
+    letter-spacing: -0.25px;
+    font-size: 40px;
+  }
+  &__description {
+    font-size: 22px;
+    width: 290px;
+    line-height: 32px;
+  }
+  &__form {
+    &__trial-email {
+      width: 290px;
+      height: 48px;
+      font-size: 18px;
+      text-align: center;
+      border: 1px solid rgba(43, 41, 45, 0.2);
+    }
+    &__get-started {
+      width: 290px;
+      height: 48px;
+      line-height: 48px;
+      margin-top: 12px;
+      font-size: 18px;
+      font-weight: 700;
+      background-color: $theme-color-blue;
+      border: none;
+      color: #fff;
+    }
+  }
+  &__signature-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+    margin-bottom: 50px;
+  }
+}
+
+.start-trial-mobile__img {
+  width: 200px;
 }

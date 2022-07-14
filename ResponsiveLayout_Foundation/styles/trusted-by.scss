@@ -1,8 +1,7 @@
-.trusted-by {
+.trusted-by-desktop {
   &__text {
     display: flex;
     flex-direction: column;
-    margin-left: 130px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -19,6 +18,7 @@
   &__user {
     text-align: center;
     margin-top: 34px;
+    // margin-left: 130px;
   }
 
   &__image {
@@ -30,7 +30,14 @@
 }
 
 .dots {
-  margin-top: 38px;
+  @include desktop-screen {
+    margin-top: 38px;
+  }
+  @include mobile-screen {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 .custom-radio {
   border: 0;
@@ -39,8 +46,77 @@
   border-radius: 50%;
   appearance: none;
   background-color: rgba(43, 41, 45, 0.2);
+  @include mobile-screen {
+    width: 12px;
+    height: 12px;
+    margin-top: 40px;
+    margin-right: 10px;
+  }
 }
 
 .custom-radio:checked {
   background-color: $trusted-color-blue;
+}
+
+.user-name-desktop {
+  font-size: 16px;
+  flex-direction: column;
+  margin-left: 11px;
+  font-size: 16px;
+  line-height: 24px;
+  // margin-top: 28px;
+  float: left;
+  &__name {
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+  }
+  &__position {
+    color: rgba(43, 41, 45, 0.6);
+  }
+}
+
+.trusted-by__images {
+  @include mobile-screen {
+    display: flex;
+    flex-direction: row;
+    &__img {
+      width: 106px;
+      height: 94px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      align-items: center;
+      float: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      // padding: 18px;
+    }
+  }
+}
+
+.trusted-by-mobile {
+  &__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(49, 66, 198, 1);
+    margin-top: 39px;
+    margin-left: 15px;
+    width: 290px;
+  }
+  &__citation {
+    font-size: 24px;
+    width: 290px;
+    margin-bottom: 32px;
+    margin-left: 15px;
+  }
+  &__img {
+    margin-right: 15px;
+    margin-bottom: 50px;
+  }
+  &__line {
+    width: 320px;
+    height: 1px;
+    background-color: rgba(227, 227, 227, 1);
+  }
 }

@@ -1,7 +1,7 @@
 .features-desktop {
   display: flex;
   flex-direction: row;
-  margin: 100px 0;
+  // margin: 100px 0;
   &__main {
     margin-left: 45px;
   }
@@ -22,20 +22,22 @@
   }
 }
 
-.aquire-new-cust-desktop {
+.aquire-new-custs-desktop {
   &__title {
     line-height: 26px;
-    margin-top: 20px;
     display: flex;
     align-items: center;
     margin-right: 15px;
     &__blue {
       color: $trusted-color-blue;
       font-size: 22px;
+      margin-top: 42px;
       display: flex;
       align-items: center;
       &__text {
         margin-left: 15px;
+        text-decoration: none;
+        color: $theme-color-blue;
       }
       &:hover {
         cursor: pointer;
@@ -47,9 +49,9 @@
     }
     &__underlined {
       border-bottom: 1px solid rgba(43, 41, 45, 0.15);
-      padding-bottom: 17px;
+      padding-bottom: 21px;
       width: 459px;
-      margin: 22px 0;
+      margin: 20px 0;
     }
   }
   &__some-description {
@@ -67,5 +69,45 @@
   }
   &__second {
     margin-top: 0;
+    margin-bottom: 110px;
   }
+}
+
+.features-mobile,
+.engage-users-mobile,
+.support-mobile {
+  width: 320px;
+  &__subtitle {
+    font-size: 22px;
+    color: $text-color-green;
+    margin-top: 48px;
+    margin-left: 15px;
+  }
+  &__title {
+    width: 290px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+  }
+  &__description {
+    margin-left: 15px;
+  }
+  &__image {
+    width: 290px;
+    margin-left: 15px;
+
+    &__text {
+      font-size: 14px;
+      line-height: 22px;
+      color: rgba(43, 41, 45, 0.6);
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.features-mobile,
+.engage-users-mobile {
+  border-bottom: 1px solid rgba(227, 227, 227, 1);
 }

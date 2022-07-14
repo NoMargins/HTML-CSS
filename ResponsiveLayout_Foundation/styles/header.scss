@@ -1,73 +1,73 @@
-@import 'variables.scss', 'breakpoints.scss';
-
-.logo__full-screen,
-.navigation,
-.header__button {
-  @include mobile-screen {
-    visibility: hidden;
-  }
-}
-
-.header__mobile {
+.header-mobile {
   background-color: white;
-  @include desktop-screen {
-    visibility: hidden;
-  }
 }
 
 .header__desktop {
-  @include mobile-screen {
-    visibility: hidden;
-  }
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.logo__full-screen,
-.logo__mobile-screen {
+.logo-desktop,
+.logo__mobile {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.logo__name,
-.nav-list {
+.nav-list-desktop {
   line-height: 25px;
   font-size: 18px;
   margin: 0 0 0 15px;
   padding: 0;
+  &__button {
+    margin-right: 130px;
+    margin-top: 39px;
+  }
 }
 
-.logo {
+.logo-desktop {
   &__full-screen {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // width: 300px;
+    margin-left: 130px;
+    margin-top: 41px;
   }
-  &__name {
-    font-size: 18px;
+  &__text {
     line-height: 25px;
+    width: 222px;
+    margin-left: 15px;
+    &__name {
+      font-size: 20px;
+    }
     &__signature {
       color: rgba(43, 41, 45, 0.6);
+      font-size: 18px;
     }
   }
 
   &__image {
-    margin-left: 130px;
+    display: flex;
+    width: 60px;
+    height: 60px;
   }
 }
 
-.nav-list {
+.nav-list-desktop {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  margin-right: auto;
+  margin-left: auto;
+  margin-top: 41px;
   &__item {
-    justify-content: space-around;
+    // justify-content: space-between;
     margin-left: 40px;
   }
   &__first-item {
-    margin-left: 400px;
+    margin-left: 335px;
   }
 
   &__third-item {
@@ -83,19 +83,11 @@
   margin-left: 11px;
 }
 
-.header {
-  &__button {
-    margin-right: auto;
-  }
-  &__learn-more__button {
-    color: $theme-color-blue;
-  }
-}
-
-.main-body {
+.main-body-desktop {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 81px;
 
   &__text {
     text-align: left;
@@ -125,6 +117,82 @@
   }
 
   &__button {
-    margin-top: 75px;
+    margin-top: 58px;
+    &__learn-more {
+      color: rgba(48, 64, 196, 1);
+    }
+  }
+}
+
+.header-mobile {
+  height: 890px;
+  display: flex;
+  flex-direction: column;
+}
+.logo__mobile-screen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__img {
+    width: 48px;
+    height: 48px;
+    margin-right: 13px;
+    margin-bottom: 8px;
+  }
+  &__name {
+    margin-left: 13px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  &__menu-button {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin-left: auto;
+  }
+}
+
+.main-body-mobile {
+  margin-top: 8px;
+  &__text {
+    background-color: rgba(243, 198, 189, 1);
+  }
+  &__title,
+  &__description,
+  &__button {
+    margin-left: 15px;
+  }
+  &__title {
+    padding-top: 5px;
+  }
+  &__button {
+    width: 290px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+    border: 0;
+    &__get-started {
+      width: 290px;
+      height: 48px;
+      color: #fff;
+      background-color: $theme-color-blue;
+      border: 0;
+      border-radius: 2px;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    &__learn-more {
+      width: 290px;
+      height: 48px;
+      background-color: #fff;
+      color: rgba(48, 64, 196, 1);
+      border: 0;
+      font-size: 18px;
+      border-radius: 2px;
+      margin-bottom: 33px;
+    }
+  }
+  &__image {
+    width: 320px;
+    margin: 85px 0 36px 0;
   }
 }

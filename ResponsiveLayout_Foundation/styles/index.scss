@@ -13,6 +13,12 @@ html {
   font-size: 24px;
   color: $main-text-color;
   font-weight: 400;
+  @include mobile-screen {
+    width: 320px;
+  }
+  @include desktop-screen {
+    width: 1400px;
+  }
 }
 
 .button {
@@ -36,26 +42,43 @@ html {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 78px;
+  @include desktop-screen {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 78px;
+  }
+  @include mobile-screen {
+    letter-spacing: -0.31px;
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
+
 h2 {
-  font-weight: 700;
-  font-size: 56px;
-  letter-spacing: -0.5px;
+  @include desktop-screen {
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: -0.5px;
+  }
+  @include mobile-screen {
+    letter-spacing: -0.36px;
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 h4 {
-  font-size: 22px;
-  font-weight: 700;
+  @include desktop-screen {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  @include mobile-screen {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
-.user-name {
-  font-size: 16px;
-}
-
-.engage-visitors__imageNo:hover {
+.engage-visitors-desktop__imageNo:hover {
   cursor: pointer;
 }
 
@@ -74,6 +97,7 @@ body {
     width: 320px;
     display: flex;
     flex-direction: column;
+    // margin-left: 15px;
   }
   @include desktop-screen {
     width: 1400px;
@@ -82,25 +106,32 @@ body {
 
 .description {
   font-size: 22px;
+  @include mobile-screen {
+    font-size: 24px;
+    line-height: 34px;
+    max-width: 290px;
+  }
 }
 
-.header {
+.header-desktop {
   background-color: $header-background-color;
 }
-.what-is-it,
-.start-trial {
+.what-is-it-desktop,
+.start-trial-desktop,
+.start-trial-mobile {
   background-color: $what-is-it-background-color;
 }
 
-.team-inbox {
+.team-inbox-desktop {
   background-color: $team-inbox-backgound-color;
 }
 
-.engage-visitors {
+.engage-visitors-desktop,
+.engage-visitors-mobile {
   background-color: rgba(0, 161, 198, 0.07);
 }
 
-.communicate-better__info {
+.communicate-better-desktop__info {
   font-size: 18px;
 }
 
@@ -113,7 +144,7 @@ body {
 .engage-visitors-mobile,
 .trusted-by-mobile__main,
 .hiring-mobile,
-.start-trial-mobie,
+.start-trial-mobile,
 .footer-mobile {
   width: 320px;
   @include desktop-screen {
@@ -130,7 +161,7 @@ body {
 .team-inbox-desktop,
 .communicate-better-desktop,
 .engage-visitors-desktop,
-.trusted-by-desktop__main,
+.trusted-by-desktop__text,
 .hiring-desktop,
 .start-trial-desktop,
 .footer-desktop {

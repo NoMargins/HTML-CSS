@@ -1,7 +1,7 @@
 .auditory-imgs {
-  display: flex;
-  align-items: center;
   @include desktop-screen {
+    display: flex;
+    align-items: center;
     margin-left: 130px;
     flex-direction: row;
     justify-content: space-between;
@@ -10,13 +10,31 @@
     margin-right: 100px;
   }
   @include mobile-screen {
+    display: flex;
     flex-direction: row;
-    max-width: 320px;
+    // max-width: 320px;
     flex-wrap: wrap;
     &__img {
       width: 107px;
-      height: 54px;
-      justify-content: space-between;
+      height: 94px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 0, 0, 0.15);
     }
   }
+}
+
+.image_mobile {
+  display: flex;
+  float: center;
+  max-width: 106px;
+  max-height: 94px;
+  padding: 18px;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.wsj {
+  padding: 25px;
 }

@@ -1,5 +1,5 @@
-.hiring {
-  margin-left: 130px;
+.hiring-desktop {
+  // margin-left: 130px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -43,7 +43,7 @@
         margin-bottom: 20px;
         border: none;
         cursor: pointer;
-        .hiring__vacancies__button__type::after {
+        .hiring-desktop__vacancies__button__type::after {
           content: url('img/icon-arrow-right-white.png');
         }
       }
@@ -63,12 +63,73 @@
         font-size: 18px;
         display: flex;
         position: relative;
+
         &:after {
           content: url('img/icon-arrow-right.png');
           left: 230px;
           position: absolute;
         }
       }
+    }
+  }
+}
+
+.hiring-mobile {
+  &__main {
+    margin-left: 15px;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__description {
+    margin-left: 15px;
+    text-align: center;
+  }
+  &__btn {
+    width: 290px;
+    height: 48px;
+    line-height: 48px;
+    border: none;
+    font-weight: 700;
+    border-radius: 2px;
+    margin-left: 15px;
+    margin-bottom: 39px;
+  }
+  &__vacancies {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    &__left-part {
+      width: 248px;
+      height: 140px;
+      border-radius: 8px 0 0 8px;
+      padding: 20px;
+      border: 1px solid rgba(43, 41, 45, 0.2);
+    }
+    &__right-part {
+      width: 50px;
+      height: 140px;
+      line-height: 140px;
+      text-align: center;
+      align-items: center;
+      background-color: rgba(213, 212, 213, 1);
+      border-radius: 0 8px 8px 0;
+      &:hover {
+        background-color: $theme-color-blue;
+        // content: url('img/icon-arrow-right-white.png');
+      }
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 28px;
+      width: 199px;
+    }
+    &__type {
+      font-size: 16px;
+      line-height: 22px;
+      color: rgba(43, 41, 45, 0.6);
+      margin-top: 18px;
     }
   }
 }

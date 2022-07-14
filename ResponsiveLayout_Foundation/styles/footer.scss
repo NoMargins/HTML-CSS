@@ -1,9 +1,8 @@
-.footer-desktop {
+.footer-navigation-desktop {
   font-size: 18px;
   color: rgba(43, 41, 45, 0.6);
   display: flex;
   flex-direction: row;
-
   &__description {
     line-height: 26px;
   }
@@ -53,8 +52,8 @@
 .additional-navigation-desktop {
   display: flex;
   flex-direction: row;
+  margin-left: 126px;
   &__column {
-    width: 265px;
     margin: 0;
     margin-top: 50px;
   }
@@ -62,6 +61,7 @@
   &__list {
     font-size: 18px;
     margin-top: 18px;
+    width: 265px;
   }
 
   &__list__item {
@@ -70,8 +70,8 @@
 }
 
 .underline-navigation-desktop {
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
 
   &__text {
     display: flex;
@@ -90,16 +90,88 @@
     }
   }
   &__icons {
-    align-items: center;
-    justify-content: center;
     float: right;
     margin-right: 130px;
-    display: flex;
-    flex-direction: row;
+    margin-top: -15px;
     &__item {
       margin-right: 23px;
-      margin-top: -15px;
+      margin-top: auto;
       margin-bottom: 20px;
     }
   }
+}
+
+.footer-mobile {
+  &__logo {
+    margin-top: 40px;
+    &__image {
+      text-align: center;
+    }
+    &__name {
+      font-size: 20px;
+      text-align: center;
+      line-height: 25px;
+    }
+    &__description {
+      font-size: 18px;
+      color: rgba(43, 41, 45, 0.6);
+      text-align: center;
+      line-height: 25px;
+      margin-bottom: 31px;
+    }
+  }
+  &__line {
+    width: 320px;
+    height: 1px;
+    background-color: rgba(227, 227, 227, 1);
+    margin-top: 40px;
+  }
+}
+
+.additional-navigation-mobile {
+  &__column {
+    margin-left: 15px;
+    margin-top: 30px;
+    &__name {
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+  }
+  &__list {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(43, 41, 45, 0.6);
+    margin-top: 18px;
+  }
+}
+
+.downloads-mobile {
+  text-align: center;
+}
+
+.underline-navigtion-mobile {
+  margin-left: 15px;
+  &__row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    font-size: 14px;
+    color: rgba(43, 41, 45, 0.6);
+  }
+  &__icons {
+    margin-bottom: 31px;
+  }
+}
+.underline-navigation-mobile__row__icons-item {
+  margin-right: 20px;
+}
+
+.underline-navigtion-mobile__row__text {
+  display: flex;
+  flex-direction: row;
+}
+
+.underline-navigation-mobile__row__list-item {
+  margin-right: 18px;
 }
