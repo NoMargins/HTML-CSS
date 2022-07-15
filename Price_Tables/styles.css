@@ -2,6 +2,13 @@
 * {
   box-sizing: border-box; }
 
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300px;
+  font-size: 15px;
+  color: white;
+  text-align: center; }
+
 table {
   border-collapse: collapse;
   border: none;
@@ -14,18 +21,13 @@ table {
   justify-content: center;
   align-items: center;
   justify-items: space-between;
-  width: 100vw;
-  height: 100vh;
   margin-top: auto;
-  margin-bottom: auto; }
+  margin-bottom: auto;
+  width: 100vw;
+  height: 100vh; }
 
 .price-card {
   background-color: #334247;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300px;
-  font-size: 15px;
-  color: white;
-  text-align: center;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
   margin: auto 9px;
   overflow: hidden; }
@@ -55,15 +57,6 @@ tr.price-card__options-list_blue:nth-child(odd) {
 
 tr.price-card__options-list_orange:nth-child(even) {
   background-color: rgba(42, 52, 56, 0.5); }
-
-.green-background {
-  background-color: #5bb189; }
-
-.blue-background {
-  background-color: #3a6ba5; }
-
-.orange-background {
-  background-color: #ec632a; }
 
 .title {
   font-size: 35px;
@@ -115,5 +108,14 @@ tr.price-card__options-list_orange:nth-child(even) {
 
 .table2 {
   position: relative; }
+
+.green-background {
+  background-color: #5bb189; }
+
+.blue-background {
+  background-color: #3a6ba5; }
+
+.orange-background {
+  background-color: #ec632a; }
 
 /*# sourceMappingURL=styles.css.map */
