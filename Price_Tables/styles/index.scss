@@ -10,12 +10,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	justify-items: space-between;
 	width: 100vw;
 	height: 100vh;
 	margin-top: auto;
 	margin-bottom: auto;
-	overflow: hidden;
 }
 
 section {
@@ -30,21 +28,14 @@ section {
 	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
 	flex-shrink: 0;
 	flex-grow: 0;
-	margin-left: 9px;
-	margin-right: 9px;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-div {
-	margin-bottom: 40px;
+	margin: auto 9px;
+	overflow: hidden;
 }
 
 .price-card__options-list ul {
 	list-style: none;
 	text-align: left;
 	padding: 0;
-	margin: 40px 0;
 }
 
 li {
@@ -54,26 +45,23 @@ li {
 	font-size: 15px;
 }
 
-// .plan-item {
-//   padding-left: 15.5%;
-// }
-
-ul.green > li.plan-item:before {
+ul.green > li.price-card__options-list_plan-item:before {
 	content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
 	margin: 18px 22px 19px;
 }
 
-ul.blue > li.plan-item:before {
+ul.blue > li.price-card__options-list_plan-item:before {
 	content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
 	margin: 18px 22px 19px;
 }
 
-ul.orange > li.plan-item:before {
+ul.orange > li.price-card__options-list_plan-item:before {
 	content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
 	margin: 18px 22px 19px;
 }
 
-ul.plan-list > li.plan-item:before {
+ul.price-card__options-list_plan
+	> li.price-card__options-list_plan-item:before {
 	left: 6%;
 }
 
@@ -95,22 +83,6 @@ li:nth-child(odd) {
 	background-color: #ec632a;
 }
 
-.price-card__order-btn {
-	height: 40px;
-	border-radius: 20px;
-	width: 155px;
-	font-weight: 400;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: white;
-	border: 0;
-	box-sizing: border-box;
-	align-items: center;
-	justify-content: center;
-}
-.price-card__title {
-	margin: 33px 0;
-}
 .title {
 	font-weight: 700;
 	font-size: 35px;
@@ -123,20 +95,42 @@ li:nth-child(odd) {
 	margin-top: 0;
 }
 
-.price-card__price {
-	font-size: 55px;
-	font-weight: 700;
-	text-align: center;
-	height: 105px;
-	line-height: 105px;
+.price-card {
+	&__price {
+		font-size: 55px;
+		font-weight: 700;
+		text-align: center;
+		height: 105px;
+		line-height: 105px;
+	}
+
+	&__description {
+		font-size: 15px;
+		font-weight: 300;
+		margin: 40px 28px;
+		width: 327;
+	}
+
+	&__title {
+		margin: 33px 0;
+	}
+
+	&__order-btn {
+		height: 40px;
+		border-radius: 20px;
+		width: 155px;
+		font-weight: 400;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: white;
+		border: 0;
+		box-sizing: border-box;
+		align-items: center;
+		justify-content: center;
+		margin: 19px auto 40px;
+	}
 }
 
-.price-card__description {
-	font-size: 15px;
-	font-weight: 300;
-	margin: 40px 28px;
-	width: 327;
-}
 .recktangle {
 	height: 25px;
 	width: 135px;
@@ -144,19 +138,15 @@ li:nth-child(odd) {
 	text-transform: uppercase;
 	line-height: 25px;
 	text-align: center;
-	transform: translateY(-785px) translateX(265px) rotate(45deg);
 	font-size: 14px;
 	font-weight: 700;
-	flex-shrink: 0;
-	flex-grow: 0;
 	flex-wrap: nowrap;
+	transform: rotate(45deg);
 	position: absolute;
-	margin: 0;
-	margin-top: 82px;
-	margin-left: 8px;
-	z-index: 1;
-	overflow: hidden;
-	clip-path: polygon(17% 0, 83% 0%, 100% 100%, 0% 100%);
+	margin-top: 26px;
+	margin-left: 275px;
+	// z-index: 1;
+	// clip-path: polygon(17% 0, 83% 0%, 100% 100%, 0% 100%);
 	//   display: block;
 	//   align-items: center;
 	//   justify-content: center;
@@ -164,8 +154,7 @@ li:nth-child(odd) {
 	//   overflow: hidden;
 }
 
-.title2 {
+.table2 {
 	position: relative;
-
-	//   overflow: hidden;
+	overflow: hidden;
 }
