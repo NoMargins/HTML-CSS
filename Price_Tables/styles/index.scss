@@ -132,21 +132,26 @@ li:nth-child(odd) {
   }
 }
 
-.recktangle {
-  height: 25px;
-  width: 145px;
-  background-color: #dc3f45;
-  text-transform: uppercase;
-  line-height: 25px;
-  text-align: center;
-  transform: translateY(-785px) translateX(265px) rotate(45deg);
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: 426px;
-  position: absolute;
-  z-index: 1;
-  clip-path: polygon(17% 0, 83% 0%, 100% 100%, 0% 100%);
+.recktangle_row {
+  &__obj {
+    height: 25px;
+    width: 145px;
+    background-color: #dc3f45;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-align: center;
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 700;
+    //   margin-top: 426px;
+    position: absolute;
+    top: 30px;
+    left: 265px;
+    //   z-index: 1;
+    //   clip-path: polygon(17% 0, 83% 0%, 100% 100%, 0% 100%);
+  }
 }
-.title2 {
+
+.table2 {
   position: relative;
 }
