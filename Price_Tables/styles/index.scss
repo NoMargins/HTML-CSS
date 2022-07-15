@@ -8,7 +8,6 @@ table {
   border-collapse: collapse;
   border: none;
   width: 380px;
-  height: 770px;
 }
 .background_page {
   background-color: #141b1c;
@@ -35,47 +34,44 @@ table {
   //   flex-grow: 0;
   margin: auto 9px;
   overflow: hidden;
+
+  &__options-list {
+    &_blue,
+    &_green,
+    &_orange {
+      height: 50px;
+      line-height: 50px;
+      font-weight: 300;
+      text-align: left;
+      &_item {
+      }
+    }
+  }
 }
 
-.price-card__options-list ul {
-  list-style: none;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-  //   margin-top: 38px;
-}
-
-li {
-  height: 50px;
-  line-height: 50px;
-  font-weight: 300;
-  margin: 0;
-  padding: 0;
-}
-
-ul.green > li.plan-item:before {
+td.green:before {
   content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
   margin: 18px 22px 19px;
 }
 
-ul.blue > li.plan-item:before {
+td.blue:before {
   content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
   margin: 18px 22px 19px;
 }
 
-ul.orange > li.plan-item:before {
+td.orange:before {
   content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
   margin: 18px 22px 19px;
 }
 
-ul.plan-list > li.plan-item:before {
-  left: 6%;
+tr.price-card__options-list_green:nth-child(even) {
+  background-color: rgba(42, 52, 56, 0.5);
 }
-
-li:nth-child(odd) {
-  background-color: #2a3438;
-  mix-blend-mode: normal;
-  backdrop-filter: opacity(0.5);
+tr.price-card__options-list_blue:nth-child(odd) {
+  background-color: rgba(42, 52, 56, 0.5);
+}
+tr.price-card__options-list_orange:nth-child(even) {
+  background-color: rgba(42, 52, 56, 0.5);
 }
 
 .green-background {
