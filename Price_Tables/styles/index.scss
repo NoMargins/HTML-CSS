@@ -12,8 +12,8 @@
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
-	margin-top: auto;
-	margin-bottom: auto;
+	// margin-top: auto;
+	// margin-bottom: auto;
 }
 
 section {
@@ -32,43 +32,16 @@ section {
 	overflow: hidden;
 }
 
-.price-card__options-list ul {
-	list-style: none;
-	text-align: left;
-	padding: 0;
-}
-
-li {
-	height: 50px;
-	line-height: 50px;
-	font-weight: 300;
-	font-size: 15px;
-}
-
-ul.green > li.price-card__options-list_plan-item:before {
-	content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
-	margin: 18px 22px 19px;
-}
-
-ul.blue > li.price-card__options-list_plan-item:before {
-	content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
-	margin: 18px 22px 19px;
-}
-
-ul.orange > li.price-card__options-list_plan-item:before {
-	content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
-	margin: 18px 22px 19px;
-}
-
-ul.price-card__options-list_plan
-	> li.price-card__options-list_plan-item:before {
-	left: 6%;
-}
+// ul.price-card__options-list_plan
+// 	> li.price-card__options-list_plan-item:before {
+// 	left: 6%;
+// }
 
 li:nth-child(odd) {
 	background-color: #2a3438;
 	mix-blend-mode: normal;
 	backdrop-filter: opacity(0.5);
+	height: 50px;
 }
 
 .green-background {
@@ -129,6 +102,38 @@ li:nth-child(odd) {
 		justify-content: center;
 		margin: 19px auto 40px;
 	}
+	&__options-list_plan {
+		text-align: left;
+		margin: 0;
+		padding: 0;
+
+		&_plan-item,
+		li {
+			list-style: none;
+			padding: 0;
+			border: 0;
+			margin: 0;
+			height: 50px;
+			line-height: 50px;
+			font-weight: 300;
+			font-size: 15px;
+		}
+	}
+}
+
+ul.green > li.price-card__options-list_plan-item:before {
+	content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
+	margin: auto 22px;
+}
+
+ul.blue > li.price-card__options-list_plan-item:before {
+	content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
+	margin: auto 22px;
+}
+
+ul.orange > li.price-card__options-list_plan-item:before {
+	content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
+	margin: auto 22px;
 }
 
 .recktangle {
