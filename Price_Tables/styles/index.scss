@@ -90,46 +90,48 @@ li:nth-child(odd) {
   background-color: #ec632a;
 }
 
-.price-card__order-btn {
-  height: 40px;
-  border-radius: 20px;
-  width: 155px;
-  font-weight: 400;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: white;
-  border: 0;
-  margin-bottom: 40px;
-}
-
-.price-card__title {
-  //   padding: 33px 0;
-  height: 130px;
-}
 .title {
   font-size: 35px;
+  line-height: 42.67px;
 }
 
 .subtitle {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 24.38px;
   margin-top: 0;
   font-weight: 300;
 }
 
-.price-card__price {
-  font-size: 55px;
-  font-weight: 700;
-  text-align: center;
-  height: 105px;
-  line-height: 105px;
+.price-card {
+  &__title {
+    height: 130px;
+  }
+  &__price {
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    height: 105px;
+    line-height: 105px;
+  }
+  &__description {
+    line-height: 18.29px;
+    text-align: center;
+    padding: 40px 28px;
+    font-weight: 300;
+  }
+  &__order-btn {
+    height: 40px;
+    border-radius: 20px;
+    width: 155px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    margin: 40px 0;
+  }
 }
 
-.price-card__description {
-  line-height: 18.29px;
-  text-align: center;
-  padding: 40px 28px 20px;
-}
 .recktangle {
   height: 25px;
   width: 145px;
@@ -140,26 +142,12 @@ li:nth-child(odd) {
   transform: translateY(-785px) translateX(265px) rotate(45deg);
   font-size: 14px;
   font-weight: 700;
-  margin-top: 430px;
-  //   margin-left: 10px;
-  //   flex-shrink: 0;
-  //   flex-grow: 0;
-  //   flex-wrap: nowrap;
+  margin-top: 426px;
   position: absolute;
-  //   margin: 0;
-  //   margin-top: 82px;
-  //   margin-left: 8px;
   z-index: 1;
-  //   overflow: hidden;
   clip-path: polygon(17% 0, 83% 0%, 100% 100%, 0% 100%);
-  //   //   display: block;
-  //   align-items: center;
-  //   justify-content: center;
-  //   overflow: hidden;
 }
 
 .title2 {
   position: relative;
-
-  //   overflow: hidden;
 }
