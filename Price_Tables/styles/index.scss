@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-.background_page {
+.container {
 	background-color: #141b1c;
 	flex-direction: row;
 	display: flex;
@@ -16,7 +16,7 @@
 	// margin-bottom: auto;
 }
 
-section {
+.table {
 	background-color: #334247;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300px;
