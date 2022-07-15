@@ -105,20 +105,20 @@ li:nth-child(odd) {
   border: 0;
   margin-bottom: 40px;
 }
+
 .price-card__title {
-  //   margin: 31px 0 30px 0;
+  //   padding: 33px 0;
   height: 130px;
 }
 .title {
-  font-weight: 700;
   font-size: 35px;
 }
 
 .subtitle {
   font-size: 20px;
-  font-weight: 300;
   line-height: 24px;
   margin-top: 0;
+  font-weight: 300;
 }
 
 .price-card__price {
@@ -130,15 +130,9 @@ li:nth-child(odd) {
 }
 
 .price-card__description {
-  font-size: 15px;
   line-height: 18.29px;
-  font-weight: 300;
-  //   margin: 40px 28px;
-  //   width: 327px;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 28px 0;
+  padding: 40px 28px 20px;
 }
 .recktangle {
   height: 25px;
