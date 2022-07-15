@@ -1021,6 +1021,10 @@
 * {
   box-sizing: border-box; }
 
+body {
+  width: 100vw;
+  height: 100vh; }
+
 html {
   font-family: 'Work Sans', sans-serif;
   font-size: 24px;
@@ -1127,33 +1131,21 @@ ul {
 .communicate-better-desktop__info {
   font-size: 18px; }
 
-.header-mobile,
-.features-mobile,
-.engage-users-mobile,
-.support-mobile,
-.team-inbox-mobile,
-.communicate-better-mobile,
-.engage-visitors-mobile,
-.trusted-by-mobile__main,
-.hiring-mobile,
-.start-trial-mobile,
-.footer-mobile {
-  width: 320px; }
-  @media screen and (min-width: 900px) {
-    .header-mobile,
-    .features-mobile,
-    .engage-users-mobile,
-    .support-mobile,
-    .team-inbox-mobile,
-    .communicate-better-mobile,
-    .engage-visitors-mobile,
-    .trusted-by-mobile__main,
-    .hiring-mobile,
-    .start-trial-mobile,
-    .footer-mobile {
-      visibility: hidden;
-      width: 0;
-      height: 0; } }
+@media screen and (min-width: 900px) {
+  .header-mobile,
+  .features-mobile,
+  .engage-users-mobile,
+  .support-mobile,
+  .team-inbox-mobile,
+  .communicate-better-mobile,
+  .engage-visitors-mobile,
+  .trusted-by-mobile__main,
+  .hiring-mobile,
+  .start-trial-mobile,
+  .footer-mobile {
+    visibility: hidden;
+    width: 0;
+    height: 0; } }
 
 @media screen and (max-width: 900px) {
   .header-desktop,
