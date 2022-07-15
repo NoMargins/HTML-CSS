@@ -2,6 +2,10 @@
 * {
   box-sizing: border-box; }
 
+table {
+  border-collapse: collapse;
+  border: none; }
+
 .background_page {
   background-color: #141b1c;
   flex-direction: row;
@@ -15,7 +19,8 @@
   margin-bottom: auto;
   overflow: hidden; }
 
-.table {
+.price-card {
+  border: none;
   background-color: #334247;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300px;
@@ -39,7 +44,7 @@ div {
   list-style: none;
   text-align: left;
   padding: 0;
-  margin: 40px 0; }
+  margin-top: 40px; }
 
 li {
   height: 50px;
@@ -85,9 +90,7 @@ li:nth-child(odd) {
   text-transform: uppercase;
   color: white;
   border: 0;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center; }
+  margin-bottom: 40px; }
 
 .price-card__title {
   margin: 33px 0; }
@@ -112,12 +115,14 @@ li:nth-child(odd) {
 .price-card__description {
   font-size: 15px;
   font-weight: 300;
-  margin: 40px 28px;
-  width: 327; }
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 28px; }
 
 .recktangle {
   height: 25px;
-  width: 135px;
+  width: 145px;
   background-color: #dc3f45;
   text-transform: uppercase;
   line-height: 25px;
@@ -125,15 +130,9 @@ li:nth-child(odd) {
   transform: translateY(-785px) translateX(265px) rotate(45deg);
   font-size: 14px;
   font-weight: 700;
-  flex-shrink: 0;
-  flex-grow: 0;
-  flex-wrap: nowrap;
+  margin-top: 430px;
   position: absolute;
-  margin: 0;
-  margin-top: 82px;
-  margin-left: 8px;
   z-index: 1;
-  overflow: hidden;
   clip-path: polygon(17% 0, 83% 0%, 100% 100%, 0% 100%); }
 
 .title2 {
