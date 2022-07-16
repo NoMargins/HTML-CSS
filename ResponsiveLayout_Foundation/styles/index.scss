@@ -1,138 +1,153 @@
 @import 'variables.scss', 'header.scss', 'footer.scss', 'breakpoints.scss',
-  'our-audience.scss', 'what-is-it.scss', 'features-section.scss',
-  'team-inbox.scss', 'communicate-better.scss', 'trusted-by.scss',
-  'engage_visitors.scss', 'vacancies.scss', 'free-trial.scss';
+	'our-audience.scss', 'what-is-it.scss', 'features-section.scss',
+	'team-inbox.scss', 'communicate-better.scss', 'trusted-by.scss',
+	'engage_visitors.scss', 'vacancies.scss', 'free-trial.scss';
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 24px;
-  color: $main-text-color;
-  font-weight: 400;
-  @include mobile-screen {
-    width: 320px;
-  }
-  @include desktop-screen {
-    width: 1400px;
-  }
+	font-family: 'Work Sans', sans-serif;
+	font-size: 24px;
+	color: $main-text-color;
+	font-weight: 400;
+	@include mobile-screen {
+		width: 320px;
+	}
+	@include desktop-screen {
+		width: 1400px;
+	}
 }
 
+.container {
+	@include mobile-screen {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		align-items: center;
+		justify-items: center;
+		// justify-content: space-around;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-left: auto;
+	}
+}
 .button {
-  font-weight: 700;
-  font-size: 18px;
-  border: 0;
-  width: 160px;
-  height: 48px;
-  border-radius: 2px;
+	font-weight: 700;
+	font-size: 18px;
+	border: 0;
+	width: 160px;
+	height: 48px;
+	border-radius: 2px;
 }
 
 .get-started__btn,
 .header__button {
-  background-color: $theme-color-blue;
-  color: #fff;
-  font-size: 18px;
+	background-color: $theme-color-blue;
+	color: #fff;
+	font-size: 18px;
 }
 
 .learn-more__btn {
-  background-color: #fff;
+	background-color: #fff;
 }
 
 h1 {
-  @include desktop-screen {
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 78px;
-  }
-  @include mobile-screen {
-    letter-spacing: -0.31px;
-    font-size: 50px;
-    line-height: 50px;
-  }
+	@include desktop-screen {
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 78px;
+	}
+	@include mobile-screen {
+		letter-spacing: -0.31px;
+		font-size: 50px;
+		line-height: 50px;
+	}
 }
 
 h2 {
-  @include desktop-screen {
-    font-weight: 700;
-    font-size: 56px;
-    letter-spacing: -0.5px;
-  }
-  @include mobile-screen {
-    letter-spacing: -0.36px;
-    font-size: 40px;
-    line-height: 40px;
-  }
+	@include desktop-screen {
+		font-weight: 700;
+		font-size: 56px;
+		letter-spacing: -0.5px;
+	}
+	@include mobile-screen {
+		letter-spacing: -0.36px;
+		font-size: 40px;
+		line-height: 40px;
+	}
 }
 
 h4 {
-  @include desktop-screen {
-    font-size: 22px;
-    font-weight: 700;
-  }
-  @include mobile-screen {
-    font-size: 24px;
-    line-height: 34px;
-  }
+	@include desktop-screen {
+		font-size: 22px;
+		font-weight: 700;
+	}
+	@include mobile-screen {
+		font-size: 24px;
+		line-height: 34px;
+	}
 }
 
 .engage-visitors-desktop__imageNo:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .auditory-imgs {
-  filter: brightness(0);
+	filter: brightness(0);
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  @include mobile-screen {
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    // margin-left: 15px;
-  }
-  @include desktop-screen {
-    width: 1400px;
-  }
+	@include mobile-screen {
+		width: 320px;
+		display: flex;
+		flex-direction: column;
+		// margin-left: 15px;
+	}
+	@include desktop-screen {
+		width: 1400px;
+	}
 }
 
 .description {
-  font-size: 22px;
-  @include mobile-screen {
-    font-size: 24px;
-    line-height: 34px;
-    max-width: 290px;
-  }
+	font-size: 22px;
+	@include mobile-screen {
+		font-size: 24px;
+		line-height: 34px;
+		max-width: 290px;
+	}
 }
 
 .header-desktop {
-  background-color: $header-background-color;
+	background-color: $header-background-color;
 }
 .what-is-it-desktop,
 .start-trial-desktop,
 .start-trial-mobile {
-  background-color: $what-is-it-background-color;
+	background-color: $what-is-it-background-color;
 }
 
 .team-inbox-desktop {
-  background-color: $team-inbox-backgound-color;
+	background-color: $team-inbox-backgound-color;
 }
 
 .engage-visitors-desktop,
 .engage-visitors-mobile {
-  background-color: rgba(0, 161, 198, 0.07);
+	background-color: rgba(0, 161, 198, 0.07);
 }
 
 .communicate-better-desktop__info {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 .header-mobile,
@@ -146,12 +161,13 @@ body {
 .hiring-mobile,
 .start-trial-mobile,
 .footer-mobile {
-  width: 320px;
-  @include desktop-screen {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
+	width: 320px;
+
+	@include desktop-screen {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
 }
 
 .header-desktop,
@@ -165,9 +181,9 @@ body {
 .hiring-desktop,
 .start-trial-desktop,
 .footer-desktop {
-  @include mobile-screen {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
+	@include mobile-screen {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
 }

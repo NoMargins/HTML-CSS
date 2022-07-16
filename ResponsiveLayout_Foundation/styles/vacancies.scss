@@ -1,135 +1,143 @@
 .hiring-desktop {
-  // margin-left: 130px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 106px;
-  &__description {
-    width: 555px;
-    margin: auto;
-  }
-  &__btn {
-    margin-top: 28px;
-    width: 247px;
-    height: 48px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-    border: none;
-    font-weight: 700;
-    border-radius: 2px;
-  }
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 1400px;
+	&__title {
+		margin-left: 0;
+		box-sizing: border-box;
+	}
+	&__description {
+		width: 555px;
+		margin: auto;
+	}
+	&__btn {
+		margin: auto;
+		margin-top: 28px;
+		width: 247px;
+		height: 48px;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+			inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+		border: none;
+		font-weight: 700;
+		border-radius: 2px;
+	}
 
-  &__vacancies {
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 110px;
-    margin-bottom: 110px;
+	&__vacancies {
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 110px;
+		margin-bottom: 110px;
 
-    &__button {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 20px;
-      width: 750px;
-      height: 81px;
-      line-height: 81px;
-      border: 1px solid rgba(43, 41, 45, 0.2);
-      background-color: #fff;
-      &:hover {
-        background-color: $theme-color-blue;
-        color: #fff;
-        margin-bottom: 20px;
-        border: none;
-        cursor: pointer;
-        .hiring-desktop__vacancies__button__type::after {
-          content: url('img/icon-arrow-right-white.png');
-        }
-      }
-      &__title,
-      &__type,
-      .arrow-icon {
-        text-align: left;
-        flex-basis: auto;
-        display: flex;
-      }
-      &__title {
-        margin-left: 25px;
-        width: 408px;
-      }
-      &__type {
-        margin-left: 40px;
-        font-size: 18px;
-        display: flex;
-        position: relative;
+		&__button {
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 20px;
+			width: 750px;
+			height: 81px;
+			line-height: 81px;
+			border: 1px solid rgba(43, 41, 45, 0.2);
+			background-color: #fff;
+			&:hover {
+				background-color: $theme-color-blue;
+				color: #fff;
+				margin-bottom: 20px;
+				border: none;
+				cursor: pointer;
+				.hiring-desktop__vacancies__button__type::after {
+					content: url('img/icon-arrow-right-white.png');
+				}
+			}
+			&__title,
+			&__type,
+			.arrow-icon {
+				text-align: left;
+				flex-basis: auto;
+				display: flex;
+			}
+			&__title {
+				margin-left: 25px;
+				width: 408px;
+			}
+			&__type {
+				margin-left: 40px;
+				font-size: 18px;
+				display: flex;
+				position: relative;
 
-        &:after {
-          content: url('img/icon-arrow-right.png');
-          left: 230px;
-          position: absolute;
-        }
-      }
-    }
-  }
+				&:after {
+					content: url('img/icon-arrow-right.png');
+					left: 230px;
+					position: absolute;
+				}
+			}
+		}
+	}
 }
 
 .hiring-mobile {
-  &__main {
-    margin-left: 15px;
-  }
-  &__title {
-    text-align: center;
-  }
-  &__description {
-    margin-left: 15px;
-    text-align: center;
-  }
-  &__btn {
-    width: 290px;
-    height: 48px;
-    line-height: 48px;
-    border: none;
-    font-weight: 700;
-    border-radius: 2px;
-    margin-left: 15px;
-    margin-bottom: 39px;
-  }
-  &__vacancies {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    &__left-part {
-      width: 248px;
-      height: 140px;
-      border-radius: 8px 0 0 8px;
-      padding: 20px;
-      border: 1px solid rgba(43, 41, 45, 0.2);
-    }
-    &__right-part {
-      width: 50px;
-      height: 140px;
-      line-height: 140px;
-      text-align: center;
-      align-items: center;
-      background-color: rgba(213, 212, 213, 1);
-      border-radius: 0 8px 8px 0;
-      &:hover {
-        background-color: $theme-color-blue;
-        // content: url('img/icon-arrow-right-white.png');
-      }
-    }
-    &__title {
-      font-size: 22px;
-      line-height: 28px;
-      width: 199px;
-    }
-    &__type {
-      font-size: 16px;
-      line-height: 22px;
-      color: rgba(43, 41, 45, 0.6);
-      margin-top: 18px;
-    }
-  }
+	&_text {
+		margin-left: 15px;
+		text-align: center;
+		&__title {
+			margin: 0;
+			box-sizing: border-box;
+			margin-top: 50px;
+		}
+	}
+	&__btn {
+		width: 290px;
+		height: 48px;
+		line-height: 48px;
+		border: none;
+		font-weight: 700;
+		border-radius: 2px;
+		margin-left: 15px;
+		margin-bottom: 39px;
+	}
+	&__vacancies {
+		display: flex;
+		flex-direction: row;
+		margin-left: 15px;
+		margin-bottom: 15px;
+		&__left-part {
+			width: 248px;
+			height: 140px;
+			border-radius: 8px 0 0 8px;
+			padding: 20px;
+			border: 1px solid rgba(43, 41, 45, 0.2);
+		}
+		&__right-part {
+			width: 50px;
+			height: 140px;
+			line-height: 140px;
+			text-align: center;
+			align-items: center;
+			background-color: rgba(213, 212, 213, 1);
+			border-radius: 0 8px 8px 0;
+			&:hover {
+				background-color: $theme-color-blue;
+				// content: url('img/icon-arrow-right-white.png');
+			}
+		}
+
+		&__title {
+			font-size: 22px;
+			line-height: 28px;
+			width: 199px;
+		}
+		&__type {
+			font-size: 16px;
+			line-height: 22px;
+			color: rgba(43, 41, 45, 0.6);
+			margin-top: 18px;
+		}
+	}
+}
+
+.container-vacancies-mobile {
+	margin-bottom: 50px;
 }

@@ -284,7 +284,7 @@
 .underline-navigation-mobile__row__list-item {
   margin-right: 18px; }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1400px) {
   .auditory-imgs {
     display: flex;
     align-items: center;
@@ -293,10 +293,11 @@
     justify-content: space-between;
     margin-top: 30px;
     margin-right: 100px; } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .auditory-imgs {
     display: flex;
     flex-direction: row;
+    max-width: 320px;
     flex-wrap: wrap; }
     .auditory-imgs__img {
       width: 107px;
@@ -318,7 +319,7 @@
 .wsj {
   padding: 25px; }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1400px) {
   .what-is-it {
     display: flex;
     flex-direction: row;
@@ -332,11 +333,13 @@
       margin-left: 130px; }
     .what-is-it__second-block {
       margin-left: 29px; } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .what-is-it {
     display: flex;
     flex-direction: column;
-    background-color: #f4f5f7; }
+    background-color: #f4f5f7;
+    width: 320px;
+    margin-top: 20px; }
     .what-is-it__block {
       width: 555px;
       font-size: 22px;
@@ -631,31 +634,37 @@
     .communicate-better-mobile__info__parag {
       width: 290px; }
 
-.trusted-by-desktop__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.trusted-by-desktop {
   position: relative; }
-.trusted-by-desktop__subtitle {
-  color: #3142c6;
-  margin-top: 76px; }
-.trusted-by-desktop__citation {
-  width: 750px;
-  text-align: center; }
-.trusted-by-desktop__user {
-  text-align: center;
-  margin-top: 34px; }
-.trusted-by-desktop__image {
-  display: flex;
-  position: absolute;
-  margin-left: 1130px;
-  margin-top: -200px; }
+  .trusted-by-desktop__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .trusted-by-desktop__subtitle {
+    color: #3142c6;
+    margin-top: 76px; }
+  .trusted-by-desktop__citation {
+    width: 750px;
+    text-align: center; }
+  .trusted-by-desktop__user {
+    text-align: center;
+    margin-top: 34px; }
+  .trusted-by-desktop__image {
+    position: absolute;
+    margin-left: 1130px;
+    margin-top: -200px; }
+  .trusted-by-desktop__line {
+    height: 1px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 66px;
+    margin-bottom: 0; }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1400px) {
   .dots {
     margin-top: 38px; } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .dots {
     margin-top: 40px;
     text-align: center;
@@ -668,7 +677,7 @@
   border-radius: 50%;
   appearance: none;
   background-color: rgba(43, 41, 45, 0.2); }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1400px) {
     .custom-radio {
       width: 12px;
       height: 12px;
@@ -692,10 +701,11 @@
   .user-name-desktop__position {
     color: rgba(43, 41, 45, 0.6); }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .trusted-by__images {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    max-width: 320px; }
     .trusted-by__images__img {
       width: 106px;
       height: 94px;
@@ -707,25 +717,29 @@
       justify-content: center;
       flex-wrap: wrap; } }
 
-.trusted-by-mobile__subtitle {
-  font-size: 24px;
-  line-height: 30px;
-  color: #3142c6;
-  margin-top: 39px;
-  margin-left: 15px;
-  width: 290px; }
-.trusted-by-mobile__citation {
-  font-size: 24px;
-  width: 290px;
-  margin-bottom: 32px;
-  margin-left: 15px; }
-.trusted-by-mobile__img {
-  margin-right: 15px;
-  margin-bottom: 50px; }
-.trusted-by-mobile__line {
+.trusted-by-mobile {
   width: 320px;
-  height: 1px;
-  background-color: #e3e3e3; }
+  display: flex;
+  margin-left: auto; }
+  .trusted-by-mobile__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    color: #3142c6;
+    margin-top: 39px;
+    margin-left: 15px;
+    width: 290px; }
+  .trusted-by-mobile__citation {
+    font-size: 24px;
+    width: 290px;
+    margin-bottom: 32px;
+    margin-left: 15px; }
+  .trusted-by-mobile__img {
+    margin-right: 15px; }
+  .trusted-by-mobile__line {
+    width: 320px;
+    height: 1px;
+    background-color: #e3e3e3;
+    margin-top: 50px; }
 
 .engage-visitors-desktop__main {
   height: 983px;
@@ -821,7 +835,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px; }
+    margin-top: 100px;
+    margin-bottom: 50px; }
   .engage-visitors-mobile__imageNo {
     display: flex;
     flex-direction: column;
@@ -845,11 +860,15 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 106px; }
+  width: 1400px; }
+  .hiring-desktop__title {
+    margin-left: 0;
+    box-sizing: border-box; }
   .hiring-desktop__description {
     width: 555px;
     margin: auto; }
   .hiring-desktop__btn {
+    margin: auto;
     margin-top: 28px;
     width: 247px;
     height: 48px;
@@ -900,13 +919,13 @@
           left: 230px;
           position: absolute; }
 
-.hiring-mobile__main {
-  margin-left: 15px; }
-.hiring-mobile__title {
-  text-align: center; }
-.hiring-mobile__description {
+.hiring-mobile_text {
   margin-left: 15px;
   text-align: center; }
+  .hiring-mobile_text__title {
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: 50px; }
 .hiring-mobile__btn {
   width: 290px;
   height: 48px;
@@ -946,6 +965,9 @@
     line-height: 22px;
     color: rgba(43, 41, 45, 0.6);
     margin-top: 18px; }
+
+.container-vacancies-mobile {
+  margin-bottom: 50px; }
 
 .start-trial-desktop__main {
   display: flex;
@@ -1026,12 +1048,25 @@ html {
   font-size: 24px;
   color: #2b292d;
   font-weight: 400; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1400px) {
     html {
       width: 320px; } }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1400px) {
     html {
       width: 1400px; } }
+
+@media screen and (max-width: 1400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-left: auto; } }
 
 .button {
   font-weight: 700;
@@ -1050,33 +1085,33 @@ html {
 .learn-more__btn {
   background-color: #fff; }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1400px) {
   h1 {
     font-weight: 700;
     font-size: 80px;
     line-height: 78px; } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   h1 {
     letter-spacing: -0.31px;
     font-size: 50px;
     line-height: 50px; } }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1400px) {
   h2 {
     font-weight: 700;
     font-size: 56px;
     letter-spacing: -0.5px; } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   h2 {
     letter-spacing: -0.36px;
     font-size: 40px;
     line-height: 40px; } }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1400px) {
   h4 {
     font-size: 22px;
     font-weight: 700; } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   h4 {
     font-size: 24px;
     line-height: 34px; } }
@@ -1092,18 +1127,18 @@ ul {
   margin: 0;
   padding: 0; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   body {
     width: 320px;
     display: flex;
     flex-direction: column; } }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1400px) {
   body {
     width: 1400px; } }
 
 .description {
   font-size: 22px; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1400px) {
     .description {
       font-size: 24px;
       line-height: 34px;
@@ -1139,7 +1174,7 @@ ul {
 .start-trial-mobile,
 .footer-mobile {
   width: 320px; }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1400px) {
     .header-mobile,
     .features-mobile,
     .engage-users-mobile,
@@ -1155,7 +1190,7 @@ ul {
       width: 0;
       height: 0; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .header-desktop,
   .features-desktop,
   .engage-users-desktop,
