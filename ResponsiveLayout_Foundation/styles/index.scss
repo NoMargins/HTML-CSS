@@ -22,6 +22,15 @@ html {
 }
 
 .container {
+
+  @include desktop-screen {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
 	@include mobile-screen {
 		display: flex;
 		flex-direction: column;
