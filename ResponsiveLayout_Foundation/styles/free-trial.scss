@@ -3,12 +3,15 @@
     display: flex;
     flex-direction: row;
     height: 441px;
+    width: 1400px;
   }
   &__img {
-    margin-top: 35px;
-    width: 269px;
+    width: 269.41px;
     height: 296px;
-    margin-left: 130px;
+    // margin: 73px 0 74px 224px;
+    margin-left: 112px;
+    margin-top: 36.5px;
+    // position: absolute;
   }
   &__text {
     margin-top: 50px;
@@ -39,12 +42,15 @@
 }
 
 .start-trial-mobile {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+
   &__main {
     &__img {
       width: 200px;
-      margin: 0;
-      margin: 50px 60px 0 60px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   &__title {

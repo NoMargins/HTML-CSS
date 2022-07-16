@@ -2,10 +2,15 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 1400px;
+  @include mobile-screen {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
   &__title {
     margin-left: 0;
     box-sizing: border-box;
+    margin-top: 110px;
   }
   &__description {
     width: 555px;
@@ -36,6 +41,7 @@
       display: flex;
       flex-direction: row;
       margin-bottom: 20px;
+      border-radius: 8px;
       width: 750px;
       height: 81px;
       line-height: 81px;
@@ -57,10 +63,12 @@
         text-align: left;
         flex-basis: auto;
         display: flex;
+        font-family: 'Work Sans', sans-serif;
       }
       &__title {
         margin-left: 25px;
         width: 408px;
+        font-size: 22px;
       }
       &__type {
         margin-left: 40px;
@@ -79,12 +87,16 @@
 }
 
 .hiring-mobile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   &_text {
     margin-left: 15px;
+    // margin-top: 50px;
     text-align: center;
     &__title {
       margin: 0;
-      box-sizing: border-box;
+      margin-top: 50px;
     }
   }
   &__btn {

@@ -1,40 +1,49 @@
 .auditory-imgs {
-	@include desktop-screen {
-		display: flex;
-		align-items: center;
-		margin-left: 130px;
-		flex-direction: row;
-		justify-content: space-between;
+  @include desktop-screen {
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+    flex-direction: row;
+    justify-content: space-between;
 
-		margin-top: 30px;
-		margin-right: 100px;
-	}
-	@include mobile-screen {
-		display: flex;
-		flex-direction: row;
-		max-width: 320px;
-		flex-wrap: wrap;
-		&__img {
-			width: 107px;
-			height: 94px;
-			align-items: center;
-			justify-content: center;
-			border: 1px solid rgba(0, 0, 0, 0.15);
-		}
-	}
+    margin-top: 30px;
+    margin-right: 100px;
+  }
+  @include mobile-screen {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    flex-wrap: wrap;
+    max-height: 188px;
+    &__img {
+      width: 107px;
+      height: 94px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 .image_mobile {
-	display: flex;
-	float: center;
-	max-width: 106px;
-	max-height: 94px;
-	padding: 18px;
-	flex-shrink: 1;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  float: center;
+  padding: 18px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 106px;
 }
 
 .wsj {
-	padding: 25px;
+  padding: 25px;
+}
+.apple-img {
+  padding: 20px 30px;
+}
+
+.trusted-by__images__img {
+  max-width: 106px;
+  max-height: 94px;
 }

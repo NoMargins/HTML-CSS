@@ -1,7 +1,7 @@
 .trusted-by-desktop {
   position: relative;
 
-  &__text {
+  &__main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,24 +10,22 @@
 
   &__subtitle {
     color: $trusted-color-blue;
-    margin-top: 76px;
+    // margin-top: 76px;
   }
   &__citation {
     width: 750px;
     text-align: center;
   }
-  &__user {
-    text-align: center;
-    margin-top: 34px;
-    // margin-left: 130px;
-  }
 
   &__image {
     position: absolute;
-    margin-left: 1130px;
-    margin-top: -200px;
+    left: 1101px;
+    top: 165px;
+    // margin-top: -200px;
     @include mobile-screen {
       visibility: hidden;
+      width: 0;
+      height: 0;
     }
   }
   &__line {
@@ -42,14 +40,14 @@
   }
 }
 
-.dots {
+form.dots {
   @include desktop-screen {
     margin-top: 38px;
   }
   @include mobile-screen {
     margin-top: 40px;
-    text-align: center;
     margin-bottom: 40px;
+    text-align: center;
   }
 }
 .custom-radio {
@@ -62,8 +60,6 @@
   @include mobile-screen {
     width: 12px;
     height: 12px;
-    margin-top: 40px;
-    margin-right: 10px;
   }
 }
 
@@ -72,6 +68,8 @@
 }
 
 .user-name-desktop {
+  text-align: center;
+  margin-top: 34px;
   font-size: 16px;
   flex-direction: column;
   margin-left: 11px;
@@ -95,8 +93,8 @@
     flex-direction: row;
     max-width: 320px;
     &__img {
-      width: 106px;
-      height: 94px;
+      max-width: 106px;
+      max-height: 94px;
       border: 1px solid rgba(0, 0, 0, 0.15);
       align-items: center;
       float: center;
@@ -109,10 +107,15 @@
   }
 }
 
+.trusted-by__main {
+  height: 548px;
+}
+
 .trusted-by-mobile {
   width: 320px;
   display: flex;
-  margin-left: auto;
+  flex-direction: column;
+  margin-bottom: 40px;
   &__subtitle {
     font-size: 24px;
     line-height: 30px;
@@ -135,5 +138,15 @@
     height: 1px;
     background-color: rgba(227, 227, 227, 1);
     margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  &__author-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__author-position {
+    color: rgba(43, 41, 45, 0.6);
+    font-size: 16px;
+    line-height: 24px;
   }
 }
