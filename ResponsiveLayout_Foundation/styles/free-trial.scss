@@ -41,24 +41,27 @@
 .start-trial-mobile {
   width: 320px;
   &__main {
-    margin-left: 15px;
     &__img {
       width: 200px;
-      padding: 50px 60px 0 60px;
+      margin: 0;
+      margin: 50px 60px 0 60px;
     }
   }
   &__title {
+    margin-left: 15px;
     text-align: center;
     letter-spacing: -0.25px;
     font-size: 40px;
   }
   &__description {
+    margin-left: 15px;
     font-size: 22px;
     width: 290px;
     line-height: 32px;
   }
   &__form {
     &__trial-email {
+      margin-left: 15px;
       width: 290px;
       height: 48px;
       font-size: 18px;
@@ -66,6 +69,7 @@
       border: 1px solid rgba(43, 41, 45, 0.2);
     }
     &__get-started {
+      margin-left: 15px;
       width: 290px;
       height: 48px;
       line-height: 48px;
@@ -78,6 +82,7 @@
     }
   }
   &__signature-text {
+    margin-left: 15px;
     font-size: 14px;
     line-height: 22px;
     color: rgba(43, 41, 45, 0.6);

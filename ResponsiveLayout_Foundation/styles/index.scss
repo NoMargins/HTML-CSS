@@ -119,7 +119,8 @@ body {
     width: 320px;
     display: flex;
     flex-direction: column;
-    // margin-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @include desktop-screen {
     width: 1400px;

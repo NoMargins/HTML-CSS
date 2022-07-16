@@ -654,12 +654,18 @@
     position: absolute;
     margin-left: 1130px;
     margin-top: -200px; }
+    @media screen and (max-width: 1400px) {
+      .trusted-by-desktop__image {
+        visibility: hidden; } }
   .trusted-by-desktop__line {
     height: 1px;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.1);
     margin-top: 66px;
     margin-bottom: 0; }
+    @media screen and (max-width: 1400px) {
+      .trusted-by-desktop__line {
+        visibility: hidden; } }
 
 @media screen and (min-width: 1400px) {
   .dots {
@@ -734,7 +740,7 @@
     margin-bottom: 32px;
     margin-left: 15px; }
   .trusted-by-mobile__img {
-    margin-right: 15px; }
+    margin-left: 15px; }
   .trusted-by-mobile__line {
     width: 320px;
     height: 1px;
@@ -924,8 +930,7 @@
   text-align: center; }
   .hiring-mobile_text__title {
     margin: 0;
-    box-sizing: border-box;
-    margin-top: 50px; }
+    box-sizing: border-box; }
 .hiring-mobile__btn {
   width: 290px;
   height: 48px;
@@ -1002,26 +1007,29 @@
 
 .start-trial-mobile {
   width: 320px; }
-  .start-trial-mobile__main {
-    margin-left: 15px; }
-    .start-trial-mobile__main__img {
-      width: 200px;
-      padding: 50px 60px 0 60px; }
+  .start-trial-mobile__main__img {
+    width: 200px;
+    margin: 0;
+    margin: 50px 60px 0 60px; }
   .start-trial-mobile__title {
+    margin-left: 15px;
     text-align: center;
     letter-spacing: -0.25px;
     font-size: 40px; }
   .start-trial-mobile__description {
+    margin-left: 15px;
     font-size: 22px;
     width: 290px;
     line-height: 32px; }
   .start-trial-mobile__form__trial-email {
+    margin-left: 15px;
     width: 290px;
     height: 48px;
     font-size: 18px;
     text-align: center;
     border: 1px solid rgba(43, 41, 45, 0.2); }
   .start-trial-mobile__form__get-started {
+    margin-left: 15px;
     width: 290px;
     height: 48px;
     line-height: 48px;
@@ -1032,6 +1040,7 @@
     border: none;
     color: #fff; }
   .start-trial-mobile__signature-text {
+    margin-left: 15px;
     font-size: 14px;
     line-height: 22px;
     color: rgba(43, 41, 45, 0.6);
@@ -1138,7 +1147,9 @@ ul {
   body {
     width: 320px;
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto; } }
 @media screen and (min-width: 1400px) {
   body {
     width: 1400px; } }

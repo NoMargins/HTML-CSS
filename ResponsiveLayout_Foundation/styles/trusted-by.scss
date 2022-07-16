@@ -1,133 +1,139 @@
 .trusted-by-desktop {
-	position: relative;
+  position: relative;
 
-	&__text {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-	&__subtitle {
-		color: $trusted-color-blue;
-		margin-top: 76px;
-	}
-	&__citation {
-		width: 750px;
-		text-align: center;
-	}
-	&__user {
-		text-align: center;
-		margin-top: 34px;
-		// margin-left: 130px;
-	}
+  &__subtitle {
+    color: $trusted-color-blue;
+    margin-top: 76px;
+  }
+  &__citation {
+    width: 750px;
+    text-align: center;
+  }
+  &__user {
+    text-align: center;
+    margin-top: 34px;
+    // margin-left: 130px;
+  }
 
-	&__image {
-		position: absolute;
-		margin-left: 1130px;
-		margin-top: -200px;
-	}
-	&__line {
-		height: 1px;
-		width: 100vw;
-		background-color: rgba(0, 0, 0, 0.1);
-		margin-top: 66px;
-		margin-bottom: 0;
-	}
+  &__image {
+    position: absolute;
+    margin-left: 1130px;
+    margin-top: -200px;
+    @include mobile-screen {
+      visibility: hidden;
+    }
+  }
+  &__line {
+    height: 1px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 66px;
+    margin-bottom: 0;
+    @include mobile-screen {
+      visibility: hidden;
+    }
+  }
 }
 
 .dots {
-	@include desktop-screen {
-		margin-top: 38px;
-	}
-	@include mobile-screen {
-		margin-top: 40px;
-		text-align: center;
-		margin-bottom: 40px;
-	}
+  @include desktop-screen {
+    margin-top: 38px;
+  }
+  @include mobile-screen {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 .custom-radio {
-	border: 0;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	appearance: none;
-	background-color: rgba(43, 41, 45, 0.2);
-	@include mobile-screen {
-		width: 12px;
-		height: 12px;
-		margin-top: 40px;
-		margin-right: 10px;
-	}
+  border: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  appearance: none;
+  background-color: rgba(43, 41, 45, 0.2);
+  @include mobile-screen {
+    width: 12px;
+    height: 12px;
+    margin-top: 40px;
+    margin-right: 10px;
+  }
 }
 
 .custom-radio:checked {
-	background-color: $trusted-color-blue;
+  background-color: $trusted-color-blue;
 }
 
 .user-name-desktop {
-	font-size: 16px;
-	flex-direction: column;
-	margin-left: 11px;
-	font-size: 16px;
-	line-height: 24px;
-	// margin-top: 28px;
-	float: left;
-	&__name {
-		width: 300px;
-		font-size: 16px;
-		text-align: center;
-	}
-	&__position {
-		color: rgba(43, 41, 45, 0.6);
-	}
+  font-size: 16px;
+  flex-direction: column;
+  margin-left: 11px;
+  font-size: 16px;
+  line-height: 24px;
+  // margin-top: 28px;
+  float: left;
+  &__name {
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+  }
+  &__position {
+    color: rgba(43, 41, 45, 0.6);
+  }
 }
 
 .trusted-by__images {
-	@include mobile-screen {
-		display: flex;
-		flex-direction: row;
-		max-width: 320px;
-		&__img {
-			width: 106px;
-			height: 94px;
-			border: 1px solid rgba(0, 0, 0, 0.15);
-			align-items: center;
-			float: center;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-wrap: wrap;
-			// padding: 18px;
-		}
-	}
+  @include mobile-screen {
+    display: flex;
+    flex-direction: row;
+    max-width: 320px;
+    &__img {
+      width: 106px;
+      height: 94px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      align-items: center;
+      float: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      // padding: 18px;
+    }
+  }
 }
 
 .trusted-by-mobile {
-	width: 320px;
-	display: flex;
-	margin-left: auto;
-	&__subtitle {
-		font-size: 24px;
-		line-height: 30px;
-		color: rgba(49, 66, 198, 1);
-		margin-top: 39px;
-		margin-left: 15px;
-		width: 290px;
-	}
-	&__citation {
-		font-size: 24px;
-		width: 290px;
-		margin-bottom: 32px;
-		margin-left: 15px;
-	}
-	&__img {
-		margin-right: 15px;
-	}
-	&__line {
-		width: 320px;
-		height: 1px;
-		background-color: rgba(227, 227, 227, 1);
-		margin-top: 50px;
-	}
+  width: 320px;
+  display: flex;
+  margin-left: auto;
+  &__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(49, 66, 198, 1);
+    margin-top: 39px;
+    margin-left: 15px;
+    width: 290px;
+  }
+  &__citation {
+    font-size: 24px;
+    width: 290px;
+    margin-bottom: 32px;
+    margin-left: 15px;
+  }
+  &__img {
+    margin-left: 15px;
+  }
+  &__line {
+    width: 320px;
+    height: 1px;
+    background-color: rgba(227, 227, 227, 1);
+    margin-top: 50px;
+  }
 }
