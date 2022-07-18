@@ -1,0 +1,96 @@
+.order {
+	padding: 50px 15px;
+	background-color: $color-light;
+
+	@include desktop-screen {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 73px 0 72px;
+	}
+
+	&__details {
+		max-width: 555px;
+		margin: auto;
+	}
+
+	&__ilustration {
+		min-width: 200px;
+		margin: auto;
+		display: block;
+
+		@include desktop-screen {
+			max-width: 269px;
+			margin-right: 121px;
+		}
+	}
+
+	&__title {
+		margin-top: 40px;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 40px;
+		text-align: center;
+		letter-spacing: -0.25px;
+	}
+	&__text {
+		margin: 0;
+		margin-top: 18px;
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	&__form {
+		display: flex;
+		margin-top: 26px;
+	}
+
+	&__email {
+		margin-top: 40px;
+		height: 48px;
+		width: 100%;
+		background: $color-white;
+		border: 1px solid $border-color;
+		border-radius: 2px;
+		text-align: center;
+
+		&::placeholder {
+			color: $color-dark;
+		}
+
+		@include desktop-screen {
+			margin-top: 0;
+		}
+	}
+
+	&__button {
+		flex-shrink: 0;
+		margin-top: 12px;
+		width: 100%;
+		height: 48px;
+		color: $color-white;
+		background-color: $color-dark-blue;
+		padding: 0;
+		font-size: 18px;
+		font-weight: 700;
+		border-radius: 2px;
+		border: none;
+
+		@include mobile-screen {
+			width: 100%;
+		}
+
+		@include desktop-screen {
+			margin-top: 12px;
+		}
+	}
+	&__terms {
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 22px;
+		color: $text-color-light-grey;
+		&-link {
+			color: $text-color-blue;
+		}
+	}
+}

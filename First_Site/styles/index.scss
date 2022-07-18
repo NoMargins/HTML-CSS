@@ -1,0 +1,66 @@
+@import 'variables.scss';
+@import 'breakpoints.scss';
+@import 'about.scss';
+@import 'customers.scss';
+@import 'features.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'tips.scss';
+@import 'orders.scss';
+@import 'audience.scss';
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: 'Work Sans', sans-serif;
+	color: $text-color-dark;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+
+.page {
+	max-width: 320px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+
+	@include desktop-screen {
+		max-width: 1400px;
+	}
+}
+
+.social-links__item {
+	text-decoration: none;
+}
+
+.action-button {
+	background-color: $color-dark-blue;
+	color: $color-white;
+	width: 290px;
+	height: 48px;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	border-radius: 2px;
+	@include desktop-screen {
+		width: 100%;
+	}
+}
+
+.hide_desktop {
+	@include desktop-screen {
+		display: none;
+	}
+}
+
+.hide_mobile {
+	@include mobile-screen {
+		display: none;
+	}
+}
