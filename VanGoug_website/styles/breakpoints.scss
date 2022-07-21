@@ -1,0 +1,13 @@
+$large: 1024px;
+
+@mixin small-screen {
+	@media screen and (max-width: $large) {
+		@content;
+	}
+}
+
+@mixin large-screen {
+	@media screen and (min-width: $large) {
+		@content;
+	}
+}

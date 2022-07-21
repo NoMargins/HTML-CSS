@@ -1,96 +1,134 @@
 .order {
-	padding: 50px 15px;
-	background-color: $color-light;
+  background-color: $color-light;
+  @include mobile-screen {
+    padding: 50px 15px;
+  }
 
-	@include desktop-screen {
-		display: flex;
-		justify-content: center;
-		align-items: flex-start;
-		padding: 73px 0 72px;
-	}
+  @include desktop-screen {
+    display: flex;
+    // justify-content: center;
+    align-items: flex-start;
+    // padding: 73px 0 72px;
+  }
 
-	&__details {
-		max-width: 555px;
-		margin: auto;
-	}
+  &__details {
+    @include desktop-screen {
+      max-width: 555px;
+      // margin-left: 121.59px;
+      margin-right: 229px;
+      display: block;
+    }
+    @include mobile-screen {
+      max-width: 290px;
+    }
+  }
 
-	&__ilustration {
-		min-width: 200px;
-		margin: auto;
-		display: block;
+  &__ilustration {
+    @include mobile-screen {
+      min-width: 200px;
+      margin: auto;
+      display: block;
+    }
 
-		@include desktop-screen {
-			max-width: 269px;
-			margin-right: 121px;
-		}
-	}
+    @include desktop-screen {
+      width: 269.41px;
+      height: 296px;
+      margin: 73px 121.59px 72px 224px;
+    }
+  }
 
-	&__title {
-		margin-top: 40px;
-		font-weight: bold;
-		font-size: 40px;
-		line-height: 40px;
-		text-align: center;
-		letter-spacing: -0.25px;
-	}
-	&__text {
-		margin: 0;
-		margin-top: 18px;
-		font-size: 22px;
-		line-height: 32px;
-	}
+  &__title {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: -0.25px;
+    @include mobile-screen {
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    @include desktop-screen {
+      margin-top: 106px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 32px;
+    @include mobile-screen {
+      margin: 0;
+      margin-top: 18px;
+      margin-bottom: 0;
+    }
+    @include desktop-screen {
+      margin-top: 12px;
+      padding: 0;
+      width: 555px;
+      margin-bottom: 0;
+    }
+  }
 
-	&__form {
-		display: flex;
-		margin-top: 26px;
-	}
+  &__form {
+    display: flex;
+    margin-top: 26px;
+  }
 
-	&__email {
-		margin-top: 40px;
-		height: 48px;
-		width: 100%;
-		background: $color-white;
-		border: 1px solid $border-color;
-		border-radius: 2px;
-		text-align: center;
+  &__email {
+    background: $color-white;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    height: 48px;
 
-		&::placeholder {
-			color: $color-dark;
-		}
+    @include desktop-screen {
+      margin-top: 40px;
+      width: 385px;
+      text-align: left;
+      padding-left: 15px;
+    }
+    @include mobile-screen {
+      text-align: center;
+      width: 100%;
+      margin-top: 40px;
+    }
 
-		@include desktop-screen {
-			margin-top: 0;
-		}
-	}
+    &::placeholder {
+      color: $color-dark;
+    }
 
-	&__button {
-		flex-shrink: 0;
-		margin-top: 12px;
-		width: 100%;
-		height: 48px;
-		color: $color-white;
-		background-color: $color-dark-blue;
-		padding: 0;
-		font-size: 18px;
-		font-weight: 700;
-		border-radius: 2px;
-		border: none;
+    @include desktop-screen {
+      margin-top: 0;
+    }
+  }
 
-		@include mobile-screen {
-			width: 100%;
-		}
+  &__button {
+    flex-shrink: 0;
+    margin-top: 12px;
+    width: 100%;
+    height: 48px;
+    color: $color-white;
+    background-color: $color-dark-blue;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+    border: none;
 
-		@include desktop-screen {
-			margin-top: 12px;
-		}
-	}
-	&__terms {
-		margin-top: 10px;
-		font-size: 14px;
-		line-height: 22px;
-		color: $text-color-light-grey;
-		&-link {
-			color: $text-color-blue;
-		}
-	}
+    @include mobile-screen {
+      width: 100%;
+    }
+
+    @include desktop-screen {
+      margin-top: 12px;
+    }
+  }
+  &__terms {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-light-grey;
+    &-link {
+      color: $text-color-blue;
+    }
+  }
 }

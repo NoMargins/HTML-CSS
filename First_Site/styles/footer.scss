@@ -1,213 +1,213 @@
 .footer {
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
 
-	&__description {
-		display: none;
-		line-height: 26px;
-		font-size: 18px;
-		width: 360px;
-		margin-top: 26px;
-		color: $text-color-light-grey;
+  &__description {
+    display: none;
+    line-height: 26px;
+    font-size: 18px;
+    width: 360px;
+    margin-top: 26px;
+    color: $text-color-light-grey;
 
-		@include desktop-screen {
-			display: block;
-		}
-	}
+    @include desktop-screen {
+      display: block;
+    }
+  }
 
-	&__line {
-		width: 100%;
-		height: 1px;
-		background-color: $color-dark;
-		opacity: 0.1;
-		margin: 0;
-	}
-	.logo {
-		@include mobile-screen {
-			display: none;
-		}
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: $color-dark;
+    opacity: 0.1;
+    margin: 0;
+  }
+  .logo {
+    @include mobile-screen {
+      display: none;
+    }
 
-		&__description {
-			display: block;
-			font-size: 18px;
-			line-height: 25px;
-			margin-top: 8px;
-			text-align: center;
-			color: rgba(43, 41, 45, 0.6);
-		}
-	}
-	@include desktop-screen {
-		max-width: 1400px;
-		padding-left: 130px;
-	}
+    &__description {
+      display: block;
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 8px;
+      text-align: center;
+      color: rgba(43, 41, 45, 0.6);
+    }
+  }
+  @include desktop-screen {
+    width: 1400px;
+    padding-left: 130px;
+  }
 }
 
 .about-company {
-	margin-top: 44px;
+  margin-top: 44px;
 }
 
 .footer-navigation {
-	margin: 0;
-	display: flex;
-	flex-direction: column;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 
-	@include desktop-screen {
-		display: flex;
-		flex-direction: row;
-		width: 1400px;
-		margin: 0 auto;
-		height: 338px;
-	}
+  @include desktop-screen {
+    display: flex;
+    flex-direction: row;
+    width: 1400px;
+    margin: 0 auto;
+    height: 338px;
+  }
 }
 
 .downloads {
-	margin: 31px auto 40px;
-	display: flex;
-	justify-content: center;
+  margin: 31px auto 40px;
+  display: flex;
+  justify-content: center;
 
-	@include desktop-screen {
-		margin: 0;
-		margin-top: 25px;
-		justify-content: left;
-	}
+  @include desktop-screen {
+    margin: 0;
+    margin-top: 25px;
+    justify-content: left;
+  }
 
-	&__item {
-		margin-right: 10px;
-	}
+  &__item {
+    margin-right: 10px;
+  }
 }
 
 .additional-navigation {
-	margin-left: 15px;
-	margin-right: 15px;
-	display: flex;
-	flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
 
-	@include desktop-screen {
-		margin-top: 60px;
-		margin-left: 126px;
-		flex-direction: row;
-	}
+  @include desktop-screen {
+    margin-top: 60px;
+    margin-left: 126px;
+    flex-direction: row;
+  }
 
-	&__column {
-		@include desktop-screen {
-			margin-top: 0;
-			margin-right: 29px;
-		}
-	}
+  &__column {
+    @include desktop-screen {
+      margin-top: 0;
+      margin-right: 29px;
+    }
+  }
 }
 
 .nav-links {
-	width: 265px;
+  width: 265px;
 
-	&__title {
-		font-weight: bold;
-		font-size: 22px;
-		line-height: 28px;
-		color: #2b292d;
-		margin: 0;
-		@include mobile-screen {
-			margin-top: 30px;
-		}
-	}
+  &__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2b292d;
+    margin: 0;
+    @include mobile-screen {
+      margin-top: 30px;
+    }
+  }
 
-	&__list {
-		list-style-type: none;
-		font-size: 18px;
-		line-height: 30px;
-		color: $text-color-light-grey;
-		padding: 0;
-		margin: 0;
-		margin-top: 18px;
-	}
+  &__list {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-color-light-grey;
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
+  }
 }
 
 .footer-links {
-	margin-left: 15px;
-	display: flex;
-	flex-direction: column;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
 
-	@include desktop-screen {
-		flex-direction: row;
-		width: 100%;
-		height: 50px;
-		margin: 0 auto;
-		align-items: center;
-	}
+  @include desktop-screen {
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+  }
 }
 
 .terms {
-	line-height: 50px;
-	font-size: 14px;
-	margin-top: 30px;
+  line-height: 50px;
+  font-size: 14px;
+  margin-top: 30px;
 
-	@include desktop-screen {
-		width: 180px;
-		line-height: 50px;
-		margin-top: 0;
-	}
+  @include desktop-screen {
+    width: 180px;
+    line-height: 50px;
+    margin-top: 0;
+  }
 
-	&__items {
-		text-decoration: none;
-		color: $color-dark;
-		opacity: 0.6;
-		margin-right: 22px;
-	}
+  &__items {
+    text-decoration: none;
+    color: $color-dark;
+    opacity: 0.6;
+    margin-right: 22px;
+  }
 }
 
 .social-links {
-	margin-bottom: 23px;
+  margin-bottom: 23px;
 
-	@include desktop-screen {
-		margin-left: auto;
-		margin-bottom: 0;
-	}
+  @include desktop-screen {
+    margin-left: auto;
+    margin-bottom: 0;
+  }
 
-	&__item {
-		margin-left: 20px;
+  &__item {
+    margin-left: 20px;
 
-		&:first-child {
-			margin-left: 0;
-		}
-	}
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 .logo-vertical {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-	@include desktop-screen {
-		display: none;
-	}
+  @include desktop-screen {
+    display: none;
+  }
 
-	&__name {
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 25px;
-		text-align: center;
-		margin-top: 20px;
-	}
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
 
-	&__description {
-		font-size: 18px;
-		line-height: 25px;
-		text-align: center;
-		color: $text-color-light-grey;
-	}
+  &__description {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: $text-color-light-grey;
+  }
 
-	&_image {
-		width: 60px;
-		height: 60px;
-	}
+  &_image {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .logo {
-	&__description {
-		display: block;
-		font-size: 18px;
-		line-height: 25px;
-		text-align: center;
-		color: $text-color-light-grey;
-	}
+  &__description {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: $text-color-light-grey;
+  }
 }
